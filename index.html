@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <title>Homepage v3 | Manly Selective Campus</title>
+    <meta name="description" content="Welcome | Manly Campus | Northern Beaches Secondary College">
+
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="resources/stylesheets/css/main.css">
+    <link rel="stylesheet" href="resources/stylesheets/css/nav.css">
+    <link rel="stylesheet" href="resources/stylesheets/css/header.css">
+    <link rel="stylesheet" href="resources/stylesheets/css/search.css">
+
+    <!-- Favicons -->
+    <link rel="icon" href="resources/favicons/favicon.ico">
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.oggyp.com/fonts/Google.css">
+
+    <!-- Icons -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined"
+          rel="stylesheet">
+
+    <!-- JQuery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <!-- JavaScript files -->
+    <script src="resources/scripts/javascript/header.js" defer></script>
+    <script src="resources/scripts/javascript/search.js" defer></script>
+  </head>
+
+  <body>
+    <header>
+      <h1>Homepage</h1>
+      <img src="resources/favicons/favicon-white.png" alt="">
+      <span class="subtitle">Manly Selective Campus</span>
+    </header>
+
+    <nav>
+      <a href="/mschomepage/">
+        <span class="material-icons-outlined">home</span>
+        <span class="nav-link-name">Home</span>
+      </a>
+      <a href="about.html">
+        <span class="material-icons-outlined">question_answer</span>
+        <span class="nav-link-name">About</span>
+      </a>
+      <a href="contact.html">
+        <span class="material-icons-outlined">email</span>
+        <span class="nav-link-name">Contact</span>
+      </a>
+      <a href="events.html">
+        <span class="material-icons-outlined">event</span>
+        <span class="nav-link-name">Events</span>
+      </a>
+      <a href="https://docs.google.com/forms/d/e/1FAIpQLSeFhR7ExybeH872bbIAf_Mo-rHDNuFRj-tt3tzF8GKd5QNmBA/viewform?usp=sf_link">
+        <span class="material-icons-outlined">web</span>
+        <span class="nav-link-name">Request A Website</span>
+      </a>
+      <a href="dev.html">
+        <span class="material-icons-outlined">code</span>
+        <span class="nav-link-name">Development</span>
+      </a>
+      <a href="https://chess.oggyp.com">
+        <img src="https://chess.oggyp.com/resources/images/favicon-white.png" alt="">
+        <span class="nav-link-name">OggyP Chess</span>
+      </a>
+    </nav>
+
+    <main>
+      <!-- IF ADDING A WEBSITE, ADD IT TO resources/scripts/json/sites.json -->
+      <!-- IF ADDING A CATEGORY, ADD IT TO resources/scripts/json/categories.json -->
+      <section id="search">
+        <h2><span>Search</span></h2>
+        <label for="search-bar"></label>
+        <div id="search-wrapper">
+          <input type="search" placeholder="Search sites or the web" id="search-bar">
+          <div id="search-suggestions-wrapper" class="empty">
+            <ul id="search-suggestions"></ul>
+          </div>
+        </div>
+      </section>
+
+      <section id="g-suite">
+        <h2><span>G Suite</span></h2>
+        <div class="button-wrapper">
+          <a href="https://classroom.google.com/h" class="button">
+            Classroom
+          </a>
+          <a href="https://mail.google.com/mail/u/0/#inbox" class="button">
+            Gmail
+          </a>
+          <a href="https://docs.google.com/document/u/0/?tgif=c" class="button">
+            Docs
+          </a>
+          <a href="https://docs.google.com/presentation/u/0/?tgif=c" class="button">
+            Slides
+          </a>
+          <a href="https://docs.google.com/speadsheets/u/0/?tgif=c" class="button">
+            Sheets
+          </a>
+          <a href="https://www.google.com/intl/en_au/drive/" class="button">
+            Drive
+          </a>
+        </div>
+      </section>
+
+      <section id="manly-websites">
+        <h2><span>Manly Websites</span></h2>
+        <div class="button-wrapper purple">
+          <a href="https://nbscmanlys-h.schools.nsw.gov.au/" class="button">
+            Official Website
+          </a>
+          <a href="https://portal.det.nsw.edu.au/" class="button">
+            DoE Portal
+          </a>
+          <a href="https://sentral.nbscmanlys-h.schools.nsw.edu.au/" class="button">
+            Sentral
+          </a>
+          <a href="https://nbscmanly.myediary.com.au/" class="button">
+            eDiary
+          </a>
+          <a href="https://timetable.nbscmanlys-h.schools.nsw.edu.au/" class="button">
+            Timetables
+          </a>
+          <a href="https://msc.edmodo.com/" class="button">
+            Edmodo
+          </a>
+          <a href="https://moodle.nbscmanlys-h.schools.nsw.edu.au/" class="button">
+            Moodle
+          </a>
+          <a href="https://projects.nbscmanlys-h.schools.nsw.edu.au/signin" class="button">
+            Sign Book
+          </a>
+          <a href="https://nbscmanlys-h.schools.nsw.gov.au/newsletter.html" class="button">
+            Weekly Pines
+          </a>
+          <a href="https://awards.nbscmanlys-h.schools.nsw.edu.au/" class="button">
+            Awards (beta)
+          </a>
+        </div>
+
+        <h3>Library</h3>
+        <div class="button-wrapper purple">
+          <a href="https://manlycampus.wheelers.co/" class="button">
+            eLibrary
+          </a>
+          <a
+              href="https://oliver333.library.det.nsw.edu.au/oliver/libraryHome.do?sso=false&corporation=8567"
+              class="button">
+            Library
+          </a>
+          <a href="https://school.eb.com.au/" class="button">
+            Britannica
+          </a>
+        </div>
+      </section>
+
+      <section id="online-meetings">
+        <h2><span>Online Meetings</span></h2>
+        <div class="button-wrapper pink">
+          <a href="https://nsweducation.zoom.us/" class="button">
+            Zoom
+          </a>
+          <a href="https://teams.microsoft.com/" class="button">
+            MS Teams
+          </a>
+          <a href="https://meet.google.com/" class="button">
+            Google Meet
+          </a>
+        </div>
+      </section>
+
+      <section id="downloads">
+        <h2><span>Downloads</span></h2>
+        <div class="button-wrapper red">
+          <a href="https://creativecloud.adobe.com/" class="button">
+            Creative Cloud
+          </a>
+          <a href="https://portal.office.com/account" class="button">
+            Office 365
+          </a>
+          <a href="https://www.autodesk.com.au/products/fusion-360/overview" class="button">
+            Fusion 360
+          </a>
+          <a href="https://musescore.org/en" class="button">
+            Musescore
+          </a>
+          <a href="https://nsw-students.onthehub.com/WebStore/Welcome.aspx" class="button">
+            Other
+          </a>
+        </div>
+      </section>
+
+      <section id="study">
+        <h2><span>Study</span></h2>
+        <div class="button-wrapper orange">
+          <a href="https://www.khanacademy.org/login" class="button">
+            Khan Academy
+          </a>
+          <a href="https://saml-in2.clickview.com.au/Shibboleth.sso/detnsw" class="button">
+            Clickview
+          </a>
+          <a href="https://www.pearsonplaces.com.au/" class="button">
+            Pearson Places
+          </a>
+        </div>
+      </section>
+
+      <section id="tests">
+        <h2><span>Tests</span></h2>
+        <h3>Naplan Locked-down Browser</h3>
+        <div class="button-wrapper yellow">
+          <a href="https://pages.assessform.edu.au/uploads/files/Release/NAP%20Locked%20down%20browser.msi"
+             class="button">
+            Windows
+          </a>
+          <a href="https://pages.assessform.edu.au/uploads/files/Release/NAP%20Locked%20down%20browser.dmg"
+             class="button">
+            Apple
+          </a>
+          <a href="https://www.assessform.edu.au/layouts/Technology/LockedDownBrowser.aspx"
+             class="button">
+            Online Help
+          </a>
+        </div>
+
+        <h3>Respondus Locked-down Browser</h3>
+        <div class="button-wrapper yellow">
+          <a href="https://bosho.boardofstudies.nsw.edu.au/Download/Docs/Windows-LabEdition.zip"
+             class="button">
+            Windows
+          </a>
+          <a href="https://bosho.boardofstudies.nsw.edu.au/Download/Docs/MacOSv2.0.6.04_InstallLDBOEM.zip" class="button">
+            Apple
+          </a>
+        </div>
+      </section>
+
+      <section id="other">
+        <h2><span>Other</span></h2>
+        <div class="button-wrapper green">
+          <a href="https://www.turnitin.com/" class="button">
+            TurnItIn
+          </a>
+          <a href="https://development.nbscmanlys-h.schools.nsw.edu.au/" class="button">
+            Web Dev
+          </a>
+          <a href="http://10.182.132.38:9191/user" class="button">
+            Papercut
+          </a>
+        </div>
+
+        <h3>Wifi</h3>
+        <div class="button-wrapper green">
+          <a href="https://archive.nbscmanlys-h.schools.nsw.edu.au/macOS%20Internet%20Settings.pdf" class="button">
+            Apple
+          </a>
+          <a href="https://archive.nbscmanlys-h.schools.nsw.edu.au/BYOD/scripts/macOS.scpt.zip" class="button">
+            macOS.scpt
+          </a>
+          <a href="https://archive.nbscmanlys-h.schools.nsw.edu.au/Windows%20Internet%20Settings.pdf" class="button">
+            Windows
+          </a>
+          <a href="https://archive.nbscmanlys-h.schools.nsw.edu.au/BYOD/scripts/win10.hta.zip" class="button">
+            win10.hta
+          </a>
+          <a href="https://archive.nbscmanlys-h.schools.nsw.edu.au/Chrome%20Internet%20Settings.pdf" class="button">
+            Chrome
+          </a>
+          <a href="https://archive.nbscmanlys-h.schools.nsw.edu.au/iOS%20Internet%20Settings.pdf" class="button">
+            iOS
+          </a>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>

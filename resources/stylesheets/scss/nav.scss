@@ -1,0 +1,99 @@
+/********************
+       MODULES
+********************/
+@use "flex";
+@use "globals";
+@use "sass:math";
+@use "vendored";
+
+
+
+
+/********************
+        NAV
+********************/
+nav {
+  & {
+    background: globals.$dark;
+    overflow: hidden;
+
+    padding: 20px 20px 20px 20px;
+    width: globals.$nav_w-link-icon + 60px;
+    height: 100vh;
+
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 11;
+
+    @include flex.flex-centre();
+    @include vendored.trs(width 250ms ease-in-out);
+  }
+
+  &:hover, &:focus {
+    width: globals.$nav_w-link-name + 30px;
+  }
+
+
+  a {
+    & {
+      overflow: hidden;
+      margin: 5px 0;
+      padding: 10px 0 10px 10px;
+      width: 100%;
+      text-decoration: none;
+
+      @include vendored.bdrs();
+      @include flex.flex-space-between(row);
+    }
+
+    &:hover, &:focus {
+      background: rgba(255, 255, 255, 0.2);
+
+      img { opacity: 100%; }
+      .nav-link-name { color: white !important; }
+
+      .material-icons-outlined {
+        color: globals.$turquoise !important;
+        animation: shake 300ms;
+      }
+    }
+
+
+    .nav-link-name {
+      overflow: hidden;
+      padding-left: 15px;
+      width: 100%;
+
+      font-family: globals.$font-2;
+      font-size: 24px;
+      color: globals.$light;
+      white-space: nowrap;
+    }
+
+
+    .material-icons-outlined {
+      width: globals.$nav_w-link-icon;
+      display: block;
+      font-size: globals.$nav_w-link-icon;
+      color: globals.$light;
+    }
+
+
+    img {
+      @extend .material-icons-outlined;
+      opacity: 0.5;
+    }
+  }
+}
+
+
+
+@keyframes shake {
+  $rotation: 10deg;
+  0% { transform: rotate(0deg); }
+  25% { transform: rotate($rotation * -1); }
+  50% { transform: rotate(0deg); }
+  75% { transform: rotate($rotation); }
+  100% { transform: rotate(0deg); }
+}

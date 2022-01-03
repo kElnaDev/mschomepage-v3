@@ -1,0 +1,44 @@
+header {
+  background: #1172b9;
+  padding: 0 20px 0 15px;
+  width: calc(100vw - 108px);
+  height: 125px;
+  position: fixed;
+  z-index: 10;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  -webkit-transition: 250ms;
+  -moz-transition: 250ms;
+  -ms-transition: 250ms;
+  -o-transition: 250ms;
+  transition: 250ms;
+}
+header * {
+  font-family: "Google Sans", sans-serif;
+}
+header h1 {
+  font-size: 30px;
+}
+header .subtitle {
+  font-size: 16px;
+}
+header img {
+  display: none;
+}
+
+header.collapsed {
+  height: 50px;
+  flex-direction: row;
+  justify-content: space-between;
+}
+header.collapsed h1 {
+  font-size: 20px;
+}
+header.collapsed img {
+  display: block;
+  width: 40px;
+}
+
+/*# sourceMappingURL=header.css.map */

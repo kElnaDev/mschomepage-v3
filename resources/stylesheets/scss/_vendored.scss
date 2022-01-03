@@ -1,0 +1,13 @@
+@mixin trs($type: 50ms) {
+  -webkit-transition: $type;
+  -moz-transition: $type;
+  -ms-transition: $type;
+  -o-transition: $type;
+  transition: $type;
+}
+
+@mixin bdrs($size: 10px) {
+  -webkit-border-radius: $size;
+  -moz-border-radius: $size;
+  border-radius: $size;
+}

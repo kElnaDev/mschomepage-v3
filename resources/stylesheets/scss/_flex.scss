@@ -1,0 +1,27 @@
+@mixin flex($jc: center, $ai: center, $dir: column) {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: $dir;
+}
+
+@mixin flex-centre($dir: column) {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: $dir;
+}
+
+@mixin flex-space-between($dir: column) {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: $dir;
+}
+
+@mixin flex-space-around($dir: column) {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: $dir;
+}

@@ -1,0 +1,94 @@
+/********************
+       MODULES
+********************/
+/********************
+        NAV
+********************/
+nav {
+  background: #1C1B29;
+  overflow: hidden;
+  padding: 20px 20px 20px 20px;
+  width: 108px;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 11;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  -webkit-transition: width 250ms ease-in-out;
+  -moz-transition: width 250ms ease-in-out;
+  -ms-transition: width 250ms ease-in-out;
+  -o-transition: width 250ms ease-in-out;
+  transition: width 250ms ease-in-out;
+}
+nav:hover, nav:focus {
+  width: 380px;
+}
+nav a {
+  overflow: hidden;
+  margin: 5px 0;
+  padding: 10px 0 10px 10px;
+  width: 100%;
+  text-decoration: none;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  border-radius: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
+}
+nav a:hover, nav a:focus {
+  background: rgba(255, 255, 255, 0.2);
+}
+nav a:hover img, nav a:focus img {
+  opacity: 100%;
+}
+nav a:hover .nav-link-name, nav a:focus .nav-link-name {
+  color: white !important;
+}
+nav a:hover .material-icons-outlined, nav a:hover img, nav a:focus .material-icons-outlined, nav a:focus img {
+  color: #11b4da !important;
+  animation: shake 300ms;
+}
+nav a .nav-link-name {
+  overflow: hidden;
+  padding-left: 15px;
+  width: 100%;
+  font-family: "Google Sans Mono", monospace;
+  font-size: 24px;
+  color: #6a7881;
+  white-space: nowrap;
+}
+nav a .material-icons-outlined, nav a img {
+  width: 48px;
+  display: block;
+  font-size: 48px;
+  color: #6a7881;
+}
+nav a img {
+  opacity: 0.5;
+}
+
+@keyframes shake {
+  0% {
+    transform: rotate(0deg);
+  }
+  25% {
+    transform: rotate(-10deg);
+  }
+  50% {
+    transform: rotate(0deg);
+  }
+  75% {
+    transform: rotate(10deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}
+
+/*# sourceMappingURL=nav.css.map */

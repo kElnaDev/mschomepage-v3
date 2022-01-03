@@ -1,0 +1,225 @@
+/********************
+       MODULES
+********************/
+@use "globals";
+@use "flex";
+@use "vendored";
+
+
+
+
+/********************
+      VARIABLES
+********************/
+$search_pv: 10px;
+$search_ph: 10px;
+$search_w-input: 250px;
+$search_h-input: 35px;
+
+$ss_w-name: 150px;
+$ss_w-category: 200px;
+
+
+
+
+/********************
+   SEARCH WRAPPER
+********************/
+#search-wrapper {
+  & {
+    width: $search_w-input;
+    position: relative;
+  }
+
+  &:hover, &:focus, &:focus-within {
+    #search-suggestions-wrapper, #search-web {
+      display: block;
+    }
+  }
+
+  input {
+    width: $search_w-input;
+    height: $search_h-input;
+  }
+}
+
+
+
+
+
+/********************
+ SUGGESTIONS WRAPPER
+********************/
+#search-suggestions-wrapper {
+  background: white;
+  padding: 0 $search_ph $search_pv;
+  display: none;
+
+  position: absolute;
+  top: $search_h-input + 95px;
+  z-index: 8;
+
+  &.empty {
+    padding: 0;
+  }
+}
+
+
+
+
+/********************
+SITE SUGGESTIONS WRAPPER
+********************/
+#search-suggestions {
+  & {
+    overflow-x: hidden;
+    overflow-y: auto;
+
+    width: $ss_w-name + $ss_w-category;
+    max-height: 500px;
+
+    font: globals.$font-3;
+  }
+
+  * {
+    color: black;
+    text-decoration: none;
+  }
+
+  li {
+    border-top: 1px solid lighten(globals.$light, 25%);
+    padding: 10px 5px;
+    list-style: none;
+
+    &:hover {
+       background: rgba(globals.$light, 0.15);
+    }
+  }
+
+  .ss-query {
+    background: globals.$ice;
+  }
+}
+
+
+.ss-category {
+  a {
+    color: globals.$light !important;
+  }
+}
+
+
+
+
+
+/********************
+  SITE SUGGESTIONS
+********************/
+.ss-site {
+  * {
+    display: inline-block;
+  }
+
+  a {
+    width: 100%;
+
+    // used flex to fix weird extra spacing issue (debug shows no margin / padding)
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  &-meta-wrapper {
+    // Note: I am quite annoyed at not being able to use CSS Grid because this has to support IE. pls fix
+    width: 100%;
+    display: flex;
+    align-items: center;
+  }
+
+  %ellipsis {
+    overflow-x: hidden;
+    white-space: nowrap;
+    -ms-text-overflow: ellipsis;
+    text-overflow: ellipsis;
+  }
+
+  &-name {
+    @extend %ellipsis;
+    width: $ss_w-name;
+  }
+
+  &-category {
+    @extend %ellipsis;
+    width: $ss_w-category;
+    color: globals.$light !important;
+    text-align: right;
+  }
+
+  &-subcategory {
+    font-weight: 500;
+    color: globals.$light !important;
+  }
+
+  &-url {
+    @extend %ellipsis;
+    width: 100%;
+    color: globals.$blue !important;
+  }
+}
+
+
+
+
+/********************
+   SEARCH THE WEB
+********************/
+#search-web {
+  & {
+    background: white;
+    padding: $search_pv $search_ph;
+    display: none;
+    position: absolute;
+    top: calc(100% - 1px);
+    z-index: 9;
+    font-family: globals.$font-3;
+  }
+
+  &.matchFound {
+    padding-bottom: 0;
+
+    #search-web-duck {
+      border-bottom: 3px solid lighten(globals.$light, 25%);
+    }
+  }
+
+  a {
+    list-style: none;
+
+    padding: 10px 5px;
+    width: $ss_w-name + $ss_w-category;
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+
+    &:hover {
+      background: rgba(globals.$light, 0.15);
+    }
+
+    span {
+      // makes it look more centred
+      padding-top: 1.5px;
+      display: inline-block;
+
+      color: black;
+    }
+
+    img {
+      margin-right: 7px;
+      width: 20px;
+    }
+  }
+
+  #search-web-duck {
+    border-top: 1px solid lighten(globals.$light, 25%);
+  }
+}

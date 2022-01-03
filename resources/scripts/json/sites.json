@@ -1,0 +1,217 @@
+[
+  {
+    "name": "Classroom",
+    "url": "https://classroom.google.com/h",
+    "category": "G Suite"
+  },
+  {
+    "name": "Gmail",
+    "url": "https://mail.google.com/mail/u/0/#inbox",
+    "category": "G Suite"
+  },
+  {
+    "name": "Docs",
+    "url": "https://docs.google.com/document/u/0/?tgif=c",
+    "category": "G Suite"
+  },
+  {
+    "name": "Slides",
+    "url": "https://docs.google.com/presentation/u/0/?tgif=c",
+    "category": "G Suite"
+  },
+  {
+    "name": "Sheets",
+    "url": "https://docs.google.com/speadsheets/u/0/?tgif=c",
+    "category": "G Suite"
+  },
+  {
+    "name": "Drive",
+    "url": "https://www.google.com/intl/en_au/drive/",
+    "category": "G Suite"
+  },
+
+
+
+  {
+    "name": "Official Website",
+    "url": "https://nbscmanlys-h.schools.nsw.gov.au/",
+    "category": "Manly Websites"
+  },
+  {
+    "name": "DoE Portal",
+    "url": "https://nbscmanlys-h.schools.nsw.gov.au/",
+    "category": "Manly Websites"
+  },
+  {
+    "name": "Sentral",
+    "url": "https://sentral.nbscmanlys-h.schools.nsw.edu.au/",
+    "category": "Manly Websites"
+  },
+  {
+    "name": "eDiary",
+    "url": "https://nbscmanly.myediary.com.au/",
+    "category": "Manly Websites"
+  },
+  {
+    "name": "Timetables",
+    "url": "https://timetable.nbscmanlys-h.schools.nsw.edu.au/",
+    "category": "Manly Websites"
+  },
+  {
+    "name": "Edmodo",
+    "url": "https://msc.edmodo.com/",
+    "category": "Manly Websites"
+  },
+  {
+    "name": "Moodle",
+    "url": "https://moodle.nbscmanlys-h.schools.nsw.edu.au/",
+    "category": "Manly Websites"
+  },
+  {
+    "name": "Sign Book",
+    "url": "https://projects.nbscmanlys-h.schools.nsw.edu.au/signin",
+    "category": "Manly Websites"
+  },
+  {
+    "name": "Weekly Pines",
+    "url": "https://nbscmanlys-h.schools.nsw.gov.au/newsletter.html",
+    "category": "Manly Websites"
+  },
+  {
+    "name": "Awards (beta)",
+    "url": "https://awards.nbscmanlys-h.schools.nsw.edu.au/",
+    "category": "Manly Websites"
+  },
+  {
+    "name": "eLibrary",
+    "url": "https://manlycampus.wheelers.co/",
+    "category": "Manly Websites",
+    "subcategory": "Library"
+  },
+  {
+    "name": "Library",
+    "url": "https://oliver333.library.det.nsw.edu.au/oliver/libraryHome.do?sso=false&corporation=8567",
+    "category": "Manly Websites",
+    "subcategory": "Library"
+  },
+  {
+    "name": "Britannica",
+    "url": "https://school.eb.com.au/",
+    "category": "Manly Websites",
+    "subcategory": "Library"
+  },
+
+
+
+  {
+    "name": "Zoom",
+    "url": "https://nsweducation.zoom.us/",
+    "category": "Online Meetings"
+  },
+  {
+    "name": "MS Teams",
+    "url": "https://teams.microsoft.com/",
+    "category": "Online Meetings"
+  },
+  {
+    "name": "Google Meet",
+    "url": "https://meet.google.com/",
+    "category": "Online Meetings"
+  },
+
+
+
+  {
+    "name": "Creative Cloud",
+    "url": "https://creativecloud.adobe.com/",
+    "category": "Downloads"
+  },
+  {
+    "name": "Office 365",
+    "url": "https://portal.office.com/account",
+    "category": "Downloads"
+  },
+  {
+    "name": "Fusion 360",
+    "url": "https://www.autodesk.com.au/products/fusion-360/overview",
+    "category": "Downloads"
+  },
+  {
+    "name": "Musescore",
+    "url": "https://musescore.org/en",
+    "category": "Downloads"
+  },
+  {
+    "name": "Other",
+    "url": "https://nsw-students.onthehub.com/WebStore/Welcome.aspx",
+    "category": "Downloads"
+  },
+
+
+
+  {
+    "name": "Khan Academy",
+    "url": "https://www.khanacademy.org/login",
+    "category": "Study"
+  },
+  {
+    "name": "Clickview",
+    "url": "https://saml-in2.clickview.com.au/Shibboleth.sso/detnsw",
+    "category": "Study"
+  },
+  {
+    "name": "Pearson Places",
+    "url": "https://www.pearsonplaces.com.au/",
+    "category": "Study"
+  },
+
+
+
+  {
+    "name": "Windows",
+    "url": "https://pages.assessform.edu.au/uploads/files/Release/NAP%20Locked%20down%20browser.msi",
+    "category": "Tests",
+    "subcategory": "Naplan"
+  },
+  {
+    "name": "Apple",
+    "url": "https://pages.assessform.edu.au/uploads/files/Release/NAP%20Locked%20down%20browser.dmg",
+    "category": "Tests",
+    "subcategory": "Naplan"
+  },
+  {
+    "name": "Online Help",
+    "url": "https://www.assessform.edu.au/layouts/Technology/LockedDownBrowser.aspx",
+    "category": "Tests",
+    "subcategory": "Naplan"
+  },
+  {
+    "name": "Windows",
+    "url": "https://bosho.boardofstudies.nsw.edu.au/Download/Docs/Windows-LabEdition.zip",
+    "category": "Tests",
+    "subcategory": "Respondus"
+  },
+  {
+    "name": "Apple",
+    "url": "https://bosho.boardofstudies.nsw.edu.au/Download/Docs/MacOSv2.0.6.04_InstallLDBOEM.zip",
+    "category": "Tests",
+    "subcategory": "Respondus"
+  },
+
+
+  {
+    "name": "TurnItIn",
+    "url": "https://www.turnitin.com/",
+    "category": "Other"
+  },
+  {
+    "name": "Web Dev",
+    "url": "https://development.nbscmanlys-h.schools.nsw.edu.au/",
+    "category": "Other"
+  },
+  {
+    "name": "Papercut",
+    "url": "http://10.182.132.38:9191/user",
+    "category": "Other"
+  }
+]

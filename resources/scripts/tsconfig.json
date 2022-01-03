@@ -1,0 +1,12 @@
+{
+  "compilerOptions": {
+    "module": "system",
+    "target": "es2015",
+    "sourceMap": true,
+    "outDir": "javascript",
+    "removeComments": true
+  },
+  "include": [
+    "typescript/*"
+  ]
+}

@@ -1,0 +1,42 @@
+@use "globals";
+@use "flex";
+@use "vendored";
+
+header {
+  & {
+    background: globals.$blue;
+    padding: 0 20px 0 15px;
+    width: calc(100vw - #{globals.$body-pl});
+    height: 125px;
+    position: fixed;
+    z-index: 10;
+
+    @include flex.flex-centre();
+    @include vendored.trs(250ms);
+  }
+
+  * {
+    font-family: globals.$font-3;
+  }
+
+  h1 { font-size: 30px; }
+  .subtitle { font-size: 16px; }
+  img { display: none; }
+}
+
+header.collapsed {
+  $collapsed-height: 50px;
+
+  & {
+    height: $collapsed-height;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  h1 { font-size: 20px; }
+
+  img {
+    display: block;
+    width: $collapsed-height * 0.8;
+  }
+}
