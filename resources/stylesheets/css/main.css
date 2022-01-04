@@ -118,6 +118,11 @@ h3 {
 .green .button, .green button {
   background: #4fb911;
 }
+.button img, button img {
+  margin-bottom: 10px;
+  width: auto;
+  height: 50px;
+}
 
 button {
   margin: 10px;

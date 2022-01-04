@@ -2,7 +2,8 @@
   {
     "name": "Classroom",
     "url": "https://classroom.google.com/h",
-    "category": "G Suite"
+    "category": "G Suite",
+    "image": "resources/images/logos/google-classroom.png"
   },
   {
     "name": "Gmail",
@@ -213,5 +214,41 @@
     "name": "Papercut",
     "url": "http://10.182.132.38:9191/user",
     "category": "Other"
+  },
+  {
+    "name": "Apple",
+    "url": "https://archive.nbscmanlys-h.schools.nsw.edu.au/macOS%20Internet%20Settings.pdf",
+    "category": "Other",
+    "subcategory": "Wifi"
+  },
+  {
+    "name": "macOS.scpt",
+    "url": "https://archive.nbscmanlys-h.schools.nsw.edu.au/BYOD/scripts/macOS.scpt.zip",
+    "category": "Other",
+    "subcategory": "Wifi"
+  },
+  {
+    "name": "Windows",
+    "url": "https://archive.nbscmanlys-h.schools.nsw.edu.au/Windows%20Internet%20Settings.pdf",
+    "category": "Other",
+    "subcategory": "Wifi"
+  },
+  {
+    "name": "win10.hta",
+    "url": "https://archive.nbscmanlys-h.schools.nsw.edu.au/BYOD/scripts/win10.hta.zip",
+    "category": "Other",
+    "subcategory": "Wifi"
+  },
+  {
+    "name": "Chrome",
+    "url": "https://archive.nbscmanlys-h.schools.nsw.edu.au/Chrome%20Internet%20Settings.pdf",
+    "category": "Other",
+    "subcategory": "Wifi"
+  },
+  {
+    "name": "iOS",
+    "url": "https://archive.nbscmanlys-h.schools.nsw.edu.au/iOS%20Internet%20Settings.pdf",
+    "category": "Other",
+    "subcategory": "Wifi"
   }
 ]

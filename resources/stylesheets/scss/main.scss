@@ -122,6 +122,12 @@ h3 {
   .orange & { background: globals.$orange; }
   .yellow & { background: globals.$yellow; }
   .green & { background: globals.$green; }
+
+  img {
+    margin-bottom: 10px;
+    width: auto;
+    height: 50px;
+  }
 }
 
 button {

@@ -1,10 +1,3 @@
-let sites, categories;
-$.getJSON("resources/scripts/json/sites.json", (res) => {
-    sites = res;
-});
-$.getJSON("resources/scripts/json/categories.json", (res) => {
-    categories = res;
-});
 const searchBar = $('#search-bar');
 const searchSuggestions = $('#search-suggestions');
 const ssWrapper = $('#search-suggestions-wrapper');
@@ -39,15 +32,11 @@ searchBar.on('input', () => {
     }
     addWebSearch(ogQuery);
 });
-function highlightQuery(data, query) {
-    const regEscape = v => v.replace(/[-[\]{}()*+?.,\\^$|#\s]/g, '\\$&');
-    return data.replace(new RegExp(regEscape(query), "gi"), (match) => `<span class='ss-query'>${match}</span>`);
-}
 function addCategory(category, query) {
     matchFound = true;
     let catName = highlightQuery(category, query);
     searchSuggestions.append(`<li class="ss-category">` +
-        `  <a href="#${category.toLowerCase().replace(/\s/g, "\-")}">` +
+        `  <a href="${categoryToId(category)}">` +
         `    Category: <span class="ss-category-name">${catName}</span>` +
         `  </a>` +
         `</li>`);
@@ -74,12 +63,6 @@ function addSite(site, query) {
         `    <span class="ss-site-url">${url}</span>` +
         `  </a>` +
         `</li>`);
-}
-function sanitiseInput(input) {
-    input = input.replaceAll("%", "%25");
-    input = input.replaceAll("&", "%26");
-    input = input.replaceAll("+", "%2B");
-    return input;
 }
 function addWebSearch(query) {
     let searchBox = $('#search-wrapper');
