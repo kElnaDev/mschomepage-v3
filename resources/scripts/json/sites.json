@@ -164,12 +164,14 @@
   {
     "name": "Musescore",
     "url": "https://musescore.org/en",
-    "category": "Downloads"
+    "category": "Downloads",
+    "imageType": "png"
   },
   {
     "name": "Other",
     "url": "https://nsw-students.onthehub.com/WebStore/Welcome.aspx",
-    "category": "Downloads"
+    "category": "Downloads",
+    "image": "nsw.png"
   },
 
 
@@ -177,17 +179,20 @@
   {
     "name": "Khan Academy",
     "url": "https://www.khanacademy.org/login",
-    "category": "Study"
+    "category": "Study",
+    "imageType": "png"
   },
   {
     "name": "Clickview",
     "url": "https://saml-in2.clickview.com.au/Shibboleth.sso/detnsw",
-    "category": "Study"
+    "category": "Study",
+    "imageType": "png"
   },
   {
     "name": "Pearson Places",
     "url": "https://www.pearsonplaces.com.au/",
-    "category": "Study"
+    "category": "Study",
+    "imageType": "png"
   },
 
 
@@ -196,83 +201,97 @@
     "name": "Windows",
     "url": "https://pages.assessform.edu.au/uploads/files/Release/NAP%20Locked%20down%20browser.msi",
     "category": "Tests",
-    "subcategory": "Naplan"
+    "subcategory": "Naplan",
+    "image": "windows.png"
   },
   {
-    "name": "Apple",
+    "name": "macOS",
     "url": "https://pages.assessform.edu.au/uploads/files/Release/NAP%20Locked%20down%20browser.dmg",
     "category": "Tests",
-    "subcategory": "Naplan"
+    "subcategory": "Naplan",
+    "image": "macos.png"
   },
   {
     "name": "Online Help",
     "url": "https://www.assessform.edu.au/layouts/Technology/LockedDownBrowser.aspx",
     "category": "Tests",
-    "subcategory": "Naplan"
+    "subcategory": "Naplan",
+    "imageType": "png"
   },
   {
     "name": "Windows",
     "url": "https://bosho.boardofstudies.nsw.edu.au/Download/Docs/Windows-LabEdition.zip",
     "category": "Tests",
-    "subcategory": "Respondus"
+    "subcategory": "Respondus",
+    "image": "windows.png"
   },
   {
-    "name": "Apple",
+    "name": "macOS",
     "url": "https://bosho.boardofstudies.nsw.edu.au/Download/Docs/MacOSv2.0.6.04_InstallLDBOEM.zip",
     "category": "Tests",
-    "subcategory": "Respondus"
+    "subcategory": "Respondus",
+    "image": "macos.png"
   },
 
 
   {
     "name": "TurnItIn",
     "url": "https://www.turnitin.com/",
-    "category": "Other"
+    "category": "Other",
+    "imageType": "png"
   },
   {
     "name": "Web Dev",
     "url": "https://development.nbscmanlys-h.schools.nsw.edu.au/",
-    "category": "Other"
+    "category": "Other",
+    "imageType": "png"
   },
   {
     "name": "Papercut",
     "url": "http://10.182.132.38:9191/user",
-    "category": "Other"
-  },
-  {
-    "name": "Apple",
-    "url": "https://archive.nbscmanlys-h.schools.nsw.edu.au/macOS%20Internet%20Settings.pdf",
     "category": "Other",
-    "subcategory": "Wifi"
-  },
-  {
-    "name": "macOS.scpt",
-    "url": "https://archive.nbscmanlys-h.schools.nsw.edu.au/BYOD/scripts/macOS.scpt.zip",
-    "category": "Other",
-    "subcategory": "Wifi"
+    "imageType": "png"
   },
   {
     "name": "Windows",
     "url": "https://archive.nbscmanlys-h.schools.nsw.edu.au/Windows%20Internet%20Settings.pdf",
     "category": "Other",
-    "subcategory": "Wifi"
+    "subcategory": "Wifi",
+    "image": "windows.png"
   },
   {
     "name": "win10.hta",
     "url": "https://archive.nbscmanlys-h.schools.nsw.edu.au/BYOD/scripts/win10.hta.zip",
     "category": "Other",
-    "subcategory": "Wifi"
+    "subcategory": "Wifi",
+    "image": "penguin.png"
   },
   {
+    "name": "macOS",
+    "url": "https://archive.nbscmanlys-h.schools.nsw.edu.au/macOS%20Internet%20Settings.pdf",
+    "category": "Other",
+    "subcategory": "Wifi",
+    "image": "macos.png"
+  },
+  {
+    "name": "macOS.scpt",
+    "url": "https://archive.nbscmanlys-h.schools.nsw.edu.au/BYOD/scripts/macOS.scpt.zip",
+    "category": "Other",
+    "subcategory": "Wifi",
+    "image": "penguin.png"
+  },
+    {
     "name": "Chrome",
     "url": "https://archive.nbscmanlys-h.schools.nsw.edu.au/Chrome%20Internet%20Settings.pdf",
     "category": "Other",
-    "subcategory": "Wifi"
+    "subcategory": "Wifi",
+    "imageType": "svg"
   },
   {
     "name": "iOS",
     "url": "https://archive.nbscmanlys-h.schools.nsw.edu.au/iOS%20Internet%20Settings.pdf",
     "category": "Other",
-    "subcategory": "Wifi"
+    "subcategory": "Wifi",
+    "imageType": "svg"
   }
 ]
