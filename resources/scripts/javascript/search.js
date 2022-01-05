@@ -69,11 +69,11 @@ function addWebSearch(query) {
     $('#search-web').remove();
     searchBox.append(`<div id="search-web">` +
         `  <a href="https://www.google.com/search?q=${sanitiseInput(query)}" id="search-web-google">` +
-        `    <img src="resources/images/logos/google.svg" alt="">` +
+        `    <img src="resources/images/logos/search/google.svg" alt="">` +
         `    <span>Search Google for "${query.replace(/</g, "&lt;").replace(/>/g, "&gt;")}"</span>` +
         `  </a>` +
         `  <a href="https://duckduckgo.com/?q=${sanitiseInput(query)}" id="search-web-duck">` +
-        `    <img src="resources/images/logos/duckduckgo.png" alt="">` +
+        `    <img src="resources/images/logos/search/duckduckgo.png" alt="">` +
         `    <span>Search DuckDuckGo for "${query.replace(/</g, "&lt;").replace(/>/g, "&gt;")}"</span>` +
         `  </a>` +
         `</div>`);

@@ -4,8 +4,19 @@ $.getJSON("resources/scripts/json/sites.json", (res) => {
     for (let i = 0; i < sites.length; i++) {
         let site = sites[i];
         let wrapper = ((site.subcategory) ? categoryToId(site.subcategory) : categoryToId(site.category)) + "-wrapper";
+        let hasImage = false;
+        let image;
+        if (site.image) {
+            hasImage = true;
+            image = `resources/images/logos/general/${site.image}`;
+        }
+        else if (site.imageType) {
+            hasImage = true;
+            image =
+                `resources/images/logos/${categoryToId(site.category, false)}/${categoryToId(site.name, false)}.${site.imageType}`;
+        }
         $(wrapper).append(`<a href="${site.url}" class="button">` +
-            ((site.image) ? `<img src="${site.image}" alt="">` : ``) +
+            ((hasImage) ? `<img src="${image}" alt="">` : '') +
             site.name +
             `</a>`);
     }

@@ -5,6 +5,7 @@ type website = {
   category: string;
   subcategory?: string;
   image?: string;
+  imageType?: 'png' | 'svg' | 'jpeg' | 'webp';
 }
 
 type autoComplete = {

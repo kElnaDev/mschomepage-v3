@@ -16,9 +16,13 @@ listed site. This is the reason for load-sites.ts.
 - sites.json is an array of objects for ease of indexing.
 - categories.json is an array of strings for ease of indexing. It is also 
 for this reason that section IDs and their associated button wrappers **must** 
-be a lowercase version of the real category name where hyphens replace spaces. 
-(e.g. The "G Suite" section has `id="g-suite"` and its button wrapper has 
-`id="g-suite-wrapper"`).
+be a lowercase version of the real category name where hyphens replace spaces.
+Check using `categoryAsId()`.
+- Unique logos are stored in the resources/images/CATEGORY-AS-ID folder, named 
+in the same format as category IDs. Check using the `categoryAsId()` function. 
+The file types of these images are stored in the sites.json as `imageType`.
+- Repeated logos are stored in the resources/images/general folder. The file 
+path of these images are stored in the sites.json as `image`.
 - The `addAutoComplete()` function is commented out because the DuckDuckGo 
 autocomplete API does not play nice with CORS. The Google autocomplete API 
 is not used instead because it requires OAuth 2 authentication via a token 

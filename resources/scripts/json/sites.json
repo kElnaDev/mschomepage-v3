@@ -3,32 +3,37 @@
     "name": "Classroom",
     "url": "https://classroom.google.com/h",
     "category": "G Suite",
-    "image": "resources/images/logos/google-classroom.png"
+    "imageType": "png"
   },
   {
     "name": "Gmail",
     "url": "https://mail.google.com/mail/u/0/#inbox",
-    "category": "G Suite"
+    "category": "G Suite",
+    "imageType": "png"
   },
   {
     "name": "Docs",
     "url": "https://docs.google.com/document/u/0/?tgif=c",
-    "category": "G Suite"
+    "category": "G Suite",
+    "imageType": "png"
   },
   {
     "name": "Slides",
     "url": "https://docs.google.com/presentation/u/0/?tgif=c",
-    "category": "G Suite"
+    "category": "G Suite",
+    "imageType": "png"
   },
   {
     "name": "Sheets",
     "url": "https://docs.google.com/speadsheets/u/0/?tgif=c",
-    "category": "G Suite"
+    "category": "G Suite",
+    "imageType": "svg"
   },
   {
     "name": "Drive",
     "url": "https://www.google.com/intl/en_au/drive/",
-    "category": "G Suite"
+    "category": "G Suite",
+    "imageType": "svg"
   },
 
 
@@ -36,70 +41,83 @@
   {
     "name": "Official Website",
     "url": "https://nbscmanlys-h.schools.nsw.gov.au/",
-    "category": "Manly Websites"
+    "category": "Manly Websites",
+    "image": "manly-campus.png"
   },
   {
     "name": "DoE Portal",
     "url": "https://nbscmanlys-h.schools.nsw.gov.au/",
-    "category": "Manly Websites"
+    "category": "Manly Websites",
+    "image": "nsw.png"
   },
   {
     "name": "Sentral",
     "url": "https://sentral.nbscmanlys-h.schools.nsw.edu.au/",
-    "category": "Manly Websites"
+    "category": "Manly Websites",
+    "imageType": "png"
   },
   {
     "name": "eDiary",
     "url": "https://nbscmanly.myediary.com.au/",
-    "category": "Manly Websites"
+    "category": "Manly Websites",
+    "imageType": "png"
   },
   {
     "name": "Timetables",
     "url": "https://timetable.nbscmanlys-h.schools.nsw.edu.au/",
-    "category": "Manly Websites"
+    "category": "Manly Websites",
+    "imageType": "png"
   },
   {
     "name": "Edmodo",
     "url": "https://msc.edmodo.com/",
-    "category": "Manly Websites"
+    "category": "Manly Websites",
+    "imageType": "png"
   },
   {
     "name": "Moodle",
     "url": "https://moodle.nbscmanlys-h.schools.nsw.edu.au/",
-    "category": "Manly Websites"
+    "category": "Manly Websites",
+    "imageType": "png"
   },
   {
     "name": "Sign Book",
     "url": "https://projects.nbscmanlys-h.schools.nsw.edu.au/signin",
-    "category": "Manly Websites"
+    "category": "Manly Websites",
+    "imageType": "png"
   },
   {
     "name": "Weekly Pines",
     "url": "https://nbscmanlys-h.schools.nsw.gov.au/newsletter.html",
-    "category": "Manly Websites"
+    "category": "Manly Websites",
+    "imageType": "png"
   },
   {
     "name": "Awards (beta)",
     "url": "https://awards.nbscmanlys-h.schools.nsw.edu.au/",
-    "category": "Manly Websites"
+    "category": "Manly Websites",
+    "imageType": "png"
   },
   {
     "name": "eLibrary",
     "url": "https://manlycampus.wheelers.co/",
     "category": "Manly Websites",
-    "subcategory": "Library"
+    "subcategory": "Library",
+    "imageType": "png"
   },
   {
     "name": "Library",
     "url": "https://oliver333.library.det.nsw.edu.au/oliver/libraryHome.do?sso=false&corporation=8567",
     "category": "Manly Websites",
-    "subcategory": "Library"
+    "subcategory": "Library",
+    "imageType": "png"
   },
   {
     "name": "Britannica",
     "url": "https://school.eb.com.au/",
     "category": "Manly Websites",
-    "subcategory": "Library"
+    "subcategory": "Library",
+    "imageType": "png"
   },
 
 
@@ -107,17 +125,20 @@
   {
     "name": "Zoom",
     "url": "https://nsweducation.zoom.us/",
-    "category": "Online Meetings"
+    "category": "Online Meetings",
+    "imageType": "png"
   },
   {
     "name": "MS Teams",
     "url": "https://teams.microsoft.com/",
-    "category": "Online Meetings"
+    "category": "Online Meetings",
+    "imageType": "svg"
   },
   {
     "name": "Google Meet",
     "url": "https://meet.google.com/",
-    "category": "Online Meetings"
+    "category": "Online Meetings",
+    "imageType": "png"
   },
 
 
@@ -125,17 +146,20 @@
   {
     "name": "Creative Cloud",
     "url": "https://creativecloud.adobe.com/",
-    "category": "Downloads"
+    "category": "Downloads",
+    "imageType": "svg"
   },
   {
     "name": "Office 365",
     "url": "https://portal.office.com/account",
-    "category": "Downloads"
+    "category": "Downloads",
+    "imageType": "png"
   },
   {
     "name": "Fusion 360",
     "url": "https://www.autodesk.com.au/products/fusion-360/overview",
-    "category": "Downloads"
+    "category": "Downloads",
+    "imageType": "png"
   },
   {
     "name": "Musescore",

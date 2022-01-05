@@ -1,0 +1,7 @@
+@use "globals";
+
+[data-mode="light"] {
+  body {
+    background: globals.$glacier;
+  }
+}

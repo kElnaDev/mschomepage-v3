@@ -13,6 +13,9 @@ function highlightQuery(data: string, query: string): string {
 }
 
 
-function categoryToId(category: string): string {
-  return "#" + category.toLowerCase().replace(/\s/g, "\-");
+function categoryToId(category: string, includeHash = true): string {
+  return ((includeHash)? "#" : "") +
+    category.toLowerCase()
+      .replace(/[^a-zA-Z0-9\s]/g, "")
+      .replace(/\s/g, "\-");
 }
