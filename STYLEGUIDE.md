@@ -516,3 +516,20 @@ Place a space after the colon.
 ```ts
 let name: string;
 ```
+
+
+
+## 6 OggyP
+This section only applies to [OggyP](https://github.com/OggyP)
+### 6.1 General Style Rules
+#### 6.1.1 Write Good Code
+Write code of an acceptable standard.
+
+It really shouldn't be that difficult. I mean, come on!
+
+
+### 6.2 General Meta Rules
+#### 6.2.1 Don't Use An Autoformatter
+Don't. Just don't. Stop.
+
+I don't want to keep fixing your crap.
