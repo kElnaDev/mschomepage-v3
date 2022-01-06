@@ -40,7 +40,7 @@ SITE SUGGESTIONS WRAPPER
 #search-suggestions {
   overflow-x: hidden;
   overflow-y: auto;
-  width: 350px;
+  width: 400px;
   max-height: 500px;
   font: "Google Sans", sans-serif;
 }
@@ -72,6 +72,17 @@ SITE SUGGESTIONS WRAPPER
 }
 .ss-site a {
   width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.ss-site img {
+  margin: 0 10px 0 0;
+  width: 20px;
+  height: 100%;
+}
+.ss-site-info-wrapper {
+  width: 350px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -125,7 +136,7 @@ SITE SUGGESTIONS WRAPPER
 #search-web a {
   list-style: none;
   padding: 10px 5px;
-  width: 350px;
+  width: 400px;
   display: flex;
   align-items: center;
   text-decoration: none;

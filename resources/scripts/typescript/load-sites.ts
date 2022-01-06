@@ -54,21 +54,12 @@ $.getJSON("resources/scripts/json/sites.json", (res): void => {
 
 
     // image stuff
-    let hasImage = false;
-    let image: string;
-    if (site.image) {
-      hasImage = true;
-      image = `resources/images/logos/general/${site.image}`;
-    } else if (site.imageType) {
-      hasImage = true;
-      image =
-        `resources/images/logos/${categoryToId(site.category, false)}/${categoryToId(site.name, false)}.${site.imageType}`;
-    }
+    let image = getImage(site);
 
 
     $(wrapper).append(
       `<a href="${site.url}" class="button">` +
-        ((hasImage)? `<img src="${image}" alt="">` : '') +
+        ((image)? `<img src="${image}" alt="">` : '') +
         site.name +
       `</a>`
     );

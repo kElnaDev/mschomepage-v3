@@ -4,4 +4,18 @@
   body {
     background: globals.$glacier;
   }
+
+  h2 {
+    span {
+      color: black;
+
+      &::after {
+        border-color: black;
+      }
+    }
+  }
+
+  input {
+    color: black;
+  }
 }

@@ -17,4 +17,15 @@ function categoryToId(category, includeHash = true) {
 function checkEmpty(element) {
     return ($(element).html().trim() === '');
 }
+function getImage(site) {
+    let image;
+    if (site.image) {
+        image = `resources/images/logos/general/${site.image}`;
+    }
+    else if (site.imageType) {
+        image =
+            `resources/images/logos/${categoryToId(site.category, false)}/${categoryToId(site.name, false)}.${site.imageType}`;
+    }
+    return image;
+}
 //# sourceMappingURL=functions.js.map

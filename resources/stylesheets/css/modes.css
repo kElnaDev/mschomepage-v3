@@ -1,5 +1,14 @@
 [data-mode=light] body {
   background: #dbe6f7;
 }
+[data-mode=light] h2 span {
+  color: black;
+}
+[data-mode=light] h2 span::after {
+  border-color: black;
+}
+[data-mode=light] input {
+  color: black;
+}
 
 /*# sourceMappingURL=modes.css.map */

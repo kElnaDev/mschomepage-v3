@@ -75,7 +75,7 @@ SITE SUGGESTIONS WRAPPER
     overflow-x: hidden;
     overflow-y: auto;
 
-    width: $ss_w-name + $ss_w-category;
+    width: $ss_w-name + $ss_w-category + 50px;
     max-height: 500px;
 
     font: globals.$font-3;
@@ -123,7 +123,19 @@ SITE SUGGESTIONS WRAPPER
   a {
     width: 100%;
 
-    // used flex to fix weird extra spacing issue (debug shows no margin / padding)
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+
+  img {
+    margin: 0 10px 0 0;
+    width: 20px;
+    height: 100%;
+  }
+
+  &-info-wrapper { // used flex to fix weird extra spacing issue (debug shows no margin / padding)
+    width: $ss_w-name + $ss_w-category;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -196,7 +208,7 @@ SITE SUGGESTIONS WRAPPER
     list-style: none;
 
     padding: 10px 5px;
-    width: $ss_w-name + $ss_w-category;
+    width: $ss_w-name + $ss_w-category + 50px;
     display: flex;
     align-items: center;
     text-decoration: none;

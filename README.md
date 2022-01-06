@@ -32,6 +32,8 @@ Origin policy by requesting from our own custom API but, alas, it failed.
 TypeScript support.
 - The order of the fonts in _globals.scss is an artifact of a previous font 
 order. I couldn't be bothered to refactor it.
+- search.scss is a mess because I didn't initially account for adding logos to 
+the search function.
 
 
 

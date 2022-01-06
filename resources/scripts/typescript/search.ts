@@ -9,6 +9,7 @@ searchBar.on('input', () => {
 
   matchFound = false;
 
+
   // clear previous
   searchSuggestions.empty();
   if (query.length < 1) {
@@ -19,10 +20,10 @@ searchBar.on('input', () => {
     ssWrapper.removeClass("empty")
   }
 
-  // used for-loop instead of forEach() for speed
-  for (let i = 0; i < categories.length; i++) {
+
+  for (let i = 0; i < categories.length; i++) // used for-loop instead of forEach() for speed
     if (categories[i].toLowerCase().includes(query)) addCategory(categories[i], ogQuery);
-  }
+
 
   for (let i = 0; i < sites.length; i++) {
     let site = sites[i];
@@ -67,6 +68,7 @@ function addSite(site: website, query: string): void {
   let category = site.category;
   let subcategory = site.subcategory;
 
+
   // handle query highlighting
   name = highlightQuery(name, query);
   url = highlightQuery(url, query);
@@ -74,19 +76,28 @@ function addSite(site: website, query: string): void {
   if (subcategory)
     subcategory = highlightQuery(subcategory, query);
 
+
   // handle subcategories
   if (site.subcategory)
     category = `<span class="ss-site-subcategory">${subcategory}</span> &gt; ${category}`;
+
+
+  // image stuff
+  let image = getImage(site);
+
 
   // add to html
   searchSuggestions.append(
     `<li class="ss-site">` +
     `  <a href="${site.url}">` +
-    `    <span class="ss-site-meta-wrapper">` +
-    `      <span class="ss-site-name">${name}</span>` +
-    `      <span class="ss-site-category">${category}</span>` +
+    `    <img src="${image}">` +
+    `    <span class="ss-site-info-wrapper">` +
+    `      <span class="ss-site-meta-wrapper">` +
+    `        <span class="ss-site-name">${name}</span>` +
+    `        <span class="ss-site-category">${category}</span>` +
+    `      </span>` +
+    `      <span class="ss-site-url">${url}</span>` +
     `    </span>` +
-    `    <span class="ss-site-url">${url}</span>` +
     `  </a>` +
     `</li>`
   );
