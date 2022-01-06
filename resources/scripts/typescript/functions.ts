@@ -19,3 +19,7 @@ function categoryToId(category: string, includeHash = true): string {
       .replace(/[^a-zA-Z0-9\s]/g, "")
       .replace(/\s/g, "\-");
 }
+
+function checkEmpty(element: string): boolean {
+  return ($(element).html().trim() === '');
+}

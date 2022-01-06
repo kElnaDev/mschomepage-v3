@@ -40,7 +40,7 @@ main {
       SECTIONS
 ********************/
 section {
-  margin: 0 0 75px;
+  margin: 0 0 70px;
 }
 
 h2 {
@@ -63,7 +63,7 @@ h2 span::after {
 }
 
 h3 {
-  margin: 20px 0 10px;
+  margin: 15px 0 10px;
   font-family: "Google Sans Display", sans-serif;
 }
 
@@ -71,6 +71,7 @@ h3 {
       BUTTONS
 ********************/
 .button-wrapper {
+  margin-bottom: 5px;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;

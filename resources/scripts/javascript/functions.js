@@ -14,4 +14,7 @@ function categoryToId(category, includeHash = true) {
             .replace(/[^a-zA-Z0-9\s]/g, "")
             .replace(/\s/g, "\-");
 }
+function checkEmpty(element) {
+    return ($(element).html().trim() === '');
+}
 //# sourceMappingURL=functions.js.map
