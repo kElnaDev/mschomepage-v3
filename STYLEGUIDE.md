@@ -505,11 +505,11 @@ input {
 
 
 ## 5 TypeScript
-### 5.1 General Rules
+### 5.1 TypeScript General Rules
 Follow the [Google JavaScript Style Guide](https://google.github.io/styleguide/jsguide.html)
 where possible.
 
-### 5.2 Type Rules
+### 5.2 TypeScript Type Rules
 #### 5.2.1 Type Separation
 Place a space after the colon.
 
@@ -521,14 +521,14 @@ let name: string;
 
 ## 6 OggyP
 This section only applies to [OggyP](https://github.com/OggyP)
-### 6.1 General Style Rules
+### 6.1 OggyP Style Rules
 #### 6.1.1 Write Good Code
 Write code of an acceptable standard.
 
 It really shouldn't be that difficult. I mean, come on!
 
 
-### 6.2 General Meta Rules
+### 6.2 OggyP Meta Rules
 #### 6.2.1 Don't Use An Autoformatter
 Don't. Just don't. Stop.
 
