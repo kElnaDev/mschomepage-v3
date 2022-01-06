@@ -54,7 +54,7 @@ main {
       SECTIONS
 ********************/
 section {
-  margin: 0 0 75px;
+  margin: 0 0 70px;
 }
 
 h2 {
@@ -78,7 +78,7 @@ h2 {
 }
 
 h3 {
-  margin: 20px 0 10px;
+  margin: 15px 0 10px;
   font-family: globals.$font-1;
 }
 
@@ -89,6 +89,7 @@ h3 {
       BUTTONS
 ********************/
 .button-wrapper {
+  margin-bottom: 5px;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
