@@ -1,297 +1,303 @@
-[
-  {
-    "name": "Classroom",
-    "url": "https://classroom.google.com/h",
-    "category": "G Suite",
-    "imageType": "png"
-  },
-  {
-    "name": "Gmail",
-    "url": "https://mail.google.com/mail/u/0/#inbox",
-    "category": "G Suite",
-    "imageType": "png"
-  },
-  {
-    "name": "Docs",
-    "url": "https://docs.google.com/document/u/0/?tgif=c",
-    "category": "G Suite",
-    "imageType": "png"
-  },
-  {
-    "name": "Slides",
-    "url": "https://docs.google.com/presentation/u/0/?tgif=c",
-    "category": "G Suite",
-    "imageType": "png"
-  },
-  {
-    "name": "Sheets",
-    "url": "https://docs.google.com/speadsheets/u/0/?tgif=c",
-    "category": "G Suite",
-    "imageType": "svg"
-  },
-  {
-    "name": "Drive",
-    "url": "https://www.google.com/intl/en_au/drive/",
-    "category": "G Suite",
-    "imageType": "svg"
-  },
-
-
-
-  {
-    "name": "Official Website",
-    "url": "https://nbscmanlys-h.schools.nsw.gov.au/",
-    "category": "Manly Websites",
-    "image": "manly-campus.png"
-  },
-  {
-    "name": "DoE Portal",
-    "url": "https://nbscmanlys-h.schools.nsw.gov.au/",
-    "category": "Manly Websites",
-    "image": "nsw.png"
-  },
-  {
-    "name": "Sentral",
-    "url": "https://sentral.nbscmanlys-h.schools.nsw.edu.au/",
-    "category": "Manly Websites",
-    "imageType": "png"
-  },
-  {
-    "name": "eDiary",
-    "url": "https://nbscmanly.myediary.com.au/",
-    "category": "Manly Websites",
-    "imageType": "png"
-  },
-  {
-    "name": "Timetables",
-    "url": "https://timetable.nbscmanlys-h.schools.nsw.edu.au/",
-    "category": "Manly Websites",
-    "imageType": "png"
-  },
-  {
-    "name": "Edmodo",
-    "url": "https://msc.edmodo.com/",
-    "category": "Manly Websites",
-    "imageType": "png"
-  },
-  {
-    "name": "Moodle",
-    "url": "https://moodle.nbscmanlys-h.schools.nsw.edu.au/",
-    "category": "Manly Websites",
-    "imageType": "png"
-  },
-  {
-    "name": "Sign Book",
-    "url": "https://projects.nbscmanlys-h.schools.nsw.edu.au/signin",
-    "category": "Manly Websites",
-    "imageType": "png"
-  },
-  {
-    "name": "Weekly Pines",
-    "url": "https://nbscmanlys-h.schools.nsw.gov.au/newsletter.html",
-    "category": "Manly Websites",
-    "imageType": "png"
-  },
-  {
-    "name": "Awards (beta)",
-    "url": "https://awards.nbscmanlys-h.schools.nsw.edu.au/",
-    "category": "Manly Websites",
-    "imageType": "png"
-  },
-  {
-    "name": "eLibrary",
-    "url": "https://manlycampus.wheelers.co/",
-    "category": "Manly Websites",
-    "subcategory": "Library",
-    "imageType": "png"
-  },
-  {
-    "name": "Library",
-    "url": "https://oliver333.library.det.nsw.edu.au/oliver/libraryHome.do?sso=false&corporation=8567",
-    "category": "Manly Websites",
-    "subcategory": "Library",
-    "imageType": "png"
-  },
-  {
-    "name": "Britannica",
-    "url": "https://school.eb.com.au/",
-    "category": "Manly Websites",
-    "subcategory": "Library",
-    "imageType": "png"
-  },
-
-
-
-  {
-    "name": "Zoom",
-    "url": "https://nsweducation.zoom.us/",
-    "category": "Online Meetings",
-    "imageType": "png"
-  },
-  {
-    "name": "MS Teams",
-    "url": "https://teams.microsoft.com/",
-    "category": "Online Meetings",
-    "imageType": "svg"
-  },
-  {
-    "name": "Google Meet",
-    "url": "https://meet.google.com/",
-    "category": "Online Meetings",
-    "imageType": "png"
-  },
-
-
-
-  {
-    "name": "Creative Cloud",
-    "url": "https://creativecloud.adobe.com/",
-    "category": "Downloads",
-    "imageType": "svg"
-  },
-  {
-    "name": "Office 365",
-    "url": "https://portal.office.com/account",
-    "category": "Downloads",
-    "imageType": "png"
-  },
-  {
-    "name": "Fusion 360",
-    "url": "https://www.autodesk.com.au/products/fusion-360/overview",
-    "category": "Downloads",
-    "imageType": "png"
-  },
-  {
-    "name": "Musescore",
-    "url": "https://musescore.org/en",
-    "category": "Downloads",
-    "imageType": "png"
-  },
-  {
-    "name": "Other",
-    "url": "https://nsw-students.onthehub.com/WebStore/Welcome.aspx",
-    "category": "Downloads",
-    "image": "nsw.png"
-  },
-
-
-
-  {
-    "name": "Khan Academy",
-    "url": "https://www.khanacademy.org/login",
-    "category": "Study",
-    "imageType": "png"
-  },
-  {
-    "name": "Clickview",
-    "url": "https://saml-in2.clickview.com.au/Shibboleth.sso/detnsw",
-    "category": "Study",
-    "imageType": "png"
-  },
-  {
-    "name": "Pearson Places",
-    "url": "https://www.pearsonplaces.com.au/",
-    "category": "Study",
-    "imageType": "png"
-  },
-
-
-
-  {
-    "name": "Windows",
-    "url": "https://pages.assessform.edu.au/uploads/files/Release/NAP%20Locked%20down%20browser.msi",
-    "category": "Tests",
-    "subcategory": "Naplan",
-    "image": "windows.png"
-  },
-  {
-    "name": "macOS",
-    "url": "https://pages.assessform.edu.au/uploads/files/Release/NAP%20Locked%20down%20browser.dmg",
-    "category": "Tests",
-    "subcategory": "Naplan",
-    "image": "macos.png"
-  },
-  {
-    "name": "Online Help",
-    "url": "https://www.assessform.edu.au/layouts/Technology/LockedDownBrowser.aspx",
-    "category": "Tests",
-    "subcategory": "Naplan",
-    "imageType": "png"
-  },
-  {
-    "name": "Windows",
-    "url": "https://bosho.boardofstudies.nsw.edu.au/Download/Docs/Windows-LabEdition.zip",
-    "category": "Tests",
-    "subcategory": "Respondus",
-    "image": "windows.png"
-  },
-  {
-    "name": "macOS",
-    "url": "https://bosho.boardofstudies.nsw.edu.au/Download/Docs/MacOSv2.0.6.04_InstallLDBOEM.zip",
-    "category": "Tests",
-    "subcategory": "Respondus",
-    "image": "macos.png"
-  },
-
-
-  {
-    "name": "TurnItIn",
-    "url": "https://www.turnitin.com/",
-    "category": "Other",
-    "imageType": "png"
-  },
-  {
-    "name": "Web Dev",
-    "url": "https://development.nbscmanlys-h.schools.nsw.edu.au/",
-    "category": "Other",
-    "imageType": "png"
-  },
-  {
-    "name": "Papercut",
-    "url": "http://10.182.132.38:9191/user",
-    "category": "Other",
-    "imageType": "png"
-  },
-  {
-    "name": "Windows",
-    "url": "https://archive.nbscmanlys-h.schools.nsw.edu.au/Windows%20Internet%20Settings.pdf",
-    "category": "Other",
-    "subcategory": "Wifi",
-    "image": "windows.png"
-  },
-  {
-    "name": "win10.hta",
-    "url": "https://archive.nbscmanlys-h.schools.nsw.edu.au/BYOD/scripts/win10.hta.zip",
-    "category": "Other",
-    "subcategory": "Wifi",
-    "image": "penguin.png"
-  },
-  {
-    "name": "macOS",
-    "url": "https://archive.nbscmanlys-h.schools.nsw.edu.au/macOS%20Internet%20Settings.pdf",
-    "category": "Other",
-    "subcategory": "Wifi",
-    "image": "macos.png"
-  },
-  {
-    "name": "macOS.scpt",
-    "url": "https://archive.nbscmanlys-h.schools.nsw.edu.au/BYOD/scripts/macOS.scpt.zip",
-    "category": "Other",
-    "subcategory": "Wifi",
-    "image": "penguin.png"
-  },
+[{
+        "name": "Classroom",
+        "url": "https://classroom.google.com/h",
+        "category": "G Suite",
+        "imageType": "png"
+    },
     {
-    "name": "Chrome",
-    "url": "https://archive.nbscmanlys-h.schools.nsw.edu.au/Chrome%20Internet%20Settings.pdf",
-    "category": "Other",
-    "subcategory": "Wifi",
-    "imageType": "svg"
-  },
-  {
-    "name": "iOS",
-    "url": "https://archive.nbscmanlys-h.schools.nsw.edu.au/iOS%20Internet%20Settings.pdf",
-    "category": "Other",
-    "subcategory": "Wifi",
-    "imageType": "svg"
-  }
+        "name": "Gmail",
+        "url": "https://mail.google.com/mail/u/0/#inbox",
+        "category": "G Suite",
+        "imageType": "png"
+    },
+    {
+        "name": "Docs",
+        "url": "https://docs.google.com/document/u/0/?tgif=c",
+        "category": "G Suite",
+        "imageType": "png"
+    },
+    {
+        "name": "Slides",
+        "url": "https://docs.google.com/presentation/u/0/?tgif=c",
+        "category": "G Suite",
+        "imageType": "png"
+    },
+    {
+        "name": "Sheets",
+        "url": "https://docs.google.com/speadsheets/u/0/?tgif=c",
+        "category": "G Suite",
+        "imageType": "svg"
+    },
+    {
+        "name": "Drive",
+        "url": "https://www.google.com/intl/en_au/drive/",
+        "category": "G Suite",
+        "imageType": "svg"
+    },
+
+
+
+    {
+        "name": "Official Website",
+        "url": "https://nbscmanlys-h.schools.nsw.gov.au/",
+        "category": "Manly Websites",
+        "image": "manly-campus.png"
+    },
+    {
+        "name": "DoE Portal",
+        "url": "https://nbscmanlys-h.schools.nsw.gov.au/",
+        "category": "Manly Websites",
+        "image": "nsw.png"
+    },
+    {
+        "name": "Sentral",
+        "url": "https://sentral.nbscmanlys-h.schools.nsw.edu.au/",
+        "category": "Manly Websites",
+        "imageType": "png"
+    },
+    {
+        "name": "eDiary",
+        "url": "https://nbscmanly.myediary.com.au/",
+        "category": "Manly Websites",
+        "imageType": "png"
+    },
+    {
+        "name": "Timetables",
+        "url": "https://timetable.nbscmanlys-h.schools.nsw.edu.au/",
+        "category": "Manly Websites",
+        "imageType": "png"
+    },
+    {
+        "name": "Edmodo",
+        "url": "https://msc.edmodo.com/",
+        "category": "Manly Websites",
+        "imageType": "png"
+    },
+    {
+        "name": "Moodle",
+        "url": "https://moodle.nbscmanlys-h.schools.nsw.edu.au/",
+        "category": "Manly Websites",
+        "imageType": "png"
+    },
+    {
+        "name": "Sign Book",
+        "url": "https://projects.nbscmanlys-h.schools.nsw.edu.au/signin",
+        "category": "Manly Websites",
+        "imageType": "png"
+    },
+    {
+        "name": "Weekly Pines",
+        "url": "https://nbscmanlys-h.schools.nsw.gov.au/newsletter.html",
+        "category": "Manly Websites",
+        "imageType": "png"
+    },
+    {
+        "name": "Awards (beta)",
+        "url": "https://awards.nbscmanlys-h.schools.nsw.edu.au/",
+        "category": "Manly Websites",
+        "imageType": "png"
+    },
+    {
+        "name": "eLibrary",
+        "url": "https://manlycampus.wheelers.co/",
+        "category": "Manly Websites",
+        "subcategory": "Library",
+        "imageType": "png"
+    },
+    {
+        "name": "Library",
+        "url": "https://oliver333.library.det.nsw.edu.au/oliver/libraryHome.do?sso=false&corporation=8567",
+        "category": "Manly Websites",
+        "subcategory": "Library",
+        "imageType": "png"
+    },
+    {
+        "name": "Britannica",
+        "url": "https://school.eb.com.au/",
+        "category": "Manly Websites",
+        "subcategory": "Library",
+        "imageType": "png"
+    },
+
+
+
+    {
+        "name": "Zoom",
+        "url": "https://nsweducation.zoom.us/",
+        "category": "Online Meetings",
+        "imageType": "png"
+    },
+    {
+        "name": "MS Teams",
+        "url": "https://teams.microsoft.com/",
+        "category": "Online Meetings",
+        "imageType": "svg"
+    },
+    {
+        "name": "Google Meet",
+        "url": "https://meet.google.com/",
+        "category": "Online Meetings",
+        "imageType": "png"
+    },
+
+
+
+    {
+        "name": "Creative Cloud",
+        "url": "https://creativecloud.adobe.com/",
+        "category": "Downloads",
+        "imageType": "svg"
+    },
+    {
+        "name": "Office 365",
+        "url": "https://portal.office.com/account",
+        "category": "Downloads",
+        "imageType": "png"
+    },
+    {
+        "name": "Fusion 360",
+        "url": "https://www.autodesk.com.au/products/fusion-360/overview",
+        "category": "Downloads",
+        "imageType": "png"
+    },
+    {
+        "name": "Musescore",
+        "url": "https://musescore.org/en",
+        "category": "Downloads",
+        "imageType": "png"
+    },
+    {
+        "name": "Other",
+        "url": "https://nsw-students.onthehub.com/WebStore/Welcome.aspx",
+        "category": "Downloads",
+        "image": "nsw.png"
+    },
+
+
+
+    {
+        "name": "Khan Academy",
+        "url": "https://www.khanacademy.org/login",
+        "category": "Study",
+        "imageType": "png"
+    },
+    {
+        "name": "Clickview",
+        "url": "https://saml-in2.clickview.com.au/Shibboleth.sso/detnsw",
+        "category": "Study",
+        "imageType": "png"
+    },
+    {
+        "name": "Pearson Places",
+        "url": "https://www.pearsonplaces.com.au/",
+        "category": "Study",
+        "imageType": "png"
+    },
+
+
+
+    {
+        "name": "Windows",
+        "url": "https://pages.assessform.edu.au/uploads/files/Release/NAP%20Locked%20down%20browser.msi",
+        "category": "Tests",
+        "subcategory": "Naplan",
+        "image": "windows.png"
+    },
+    {
+        "name": "macOS",
+        "url": "https://pages.assessform.edu.au/uploads/files/Release/NAP%20Locked%20down%20browser.dmg",
+        "category": "Tests",
+        "subcategory": "Naplan",
+        "image": "macos.png"
+    },
+    {
+        "name": "Online Help",
+        "url": "https://www.assessform.edu.au/layouts/Technology/LockedDownBrowser.aspx",
+        "category": "Tests",
+        "subcategory": "Naplan",
+        "imageType": "png"
+    },
+    {
+        "name": "Windows",
+        "url": "https://bosho.boardofstudies.nsw.edu.au/Download/Docs/Windows-LabEdition.zip",
+        "category": "Tests",
+        "subcategory": "Respondus",
+        "image": "windows.png"
+    },
+    {
+        "name": "macOS",
+        "url": "https://bosho.boardofstudies.nsw.edu.au/Download/Docs/MacOSv2.0.6.04_InstallLDBOEM.zip",
+        "category": "Tests",
+        "subcategory": "Respondus",
+        "image": "macos.png"
+    },
+
+
+    {
+        "name": "TurnItIn",
+        "url": "https://www.turnitin.com/",
+        "category": "Other",
+        "imageType": "png"
+    },
+    {
+        "name": "Web Dev",
+        "url": "https://development.nbscmanlys-h.schools.nsw.edu.au/",
+        "category": "Other",
+        "imageType": "png"
+    },
+    {
+        "name": "Papercut",
+        "url": "http://10.182.132.38:9191/user",
+        "category": "Other",
+        "imageType": "png"
+    },
+    {
+        "name": "Windows",
+        "url": "https://archive.nbscmanlys-h.schools.nsw.edu.au/Windows%20Internet%20Settings.pdf",
+        "category": "Other",
+        "subcategory": "Wifi",
+        "image": "windows.png"
+    },
+    {
+        "name": "win10.hta",
+        "url": "https://archive.nbscmanlys-h.schools.nsw.edu.au/BYOD/scripts/win10.hta",
+        "category": "Other",
+        "subcategory": "Wifi",
+        "image": "penguin.png"
+    },
+    {
+        "name": "macOS",
+        "url": "https://archive.nbscmanlys-h.schools.nsw.edu.au/macOS%20Internet%20Settings.pdf",
+        "category": "Other",
+        "subcategory": "Wifi",
+        "image": "macos.png"
+    },
+    {
+        "name": "macOS.scpt",
+        "url": "https://archive.nbscmanlys-h.schools.nsw.edu.au/BYOD/scripts/macOS.scpt.zip",
+        "category": "Other",
+        "subcategory": "Wifi",
+        "image": "penguin.png"
+    },
+    {
+        "name": "Linux",
+        "url": "https://cdn.oggyp.com/downloads/Linux-DETNSW-Network-Setup.pdf",
+        "category": "Other",
+        "subcategory": "Wifi",
+        "image": "tux.svg"
+    },
+    {
+        "name": "Chrome",
+        "url": "https://archive.nbscmanlys-h.schools.nsw.edu.au/Chrome%20Internet%20Settings.pdf",
+        "category": "Other",
+        "subcategory": "Wifi",
+        "imageType": "svg"
+    },
+    {
+        "name": "iOS",
+        "url": "https://archive.nbscmanlys-h.schools.nsw.edu.au/iOS%20Internet%20Settings.pdf",
+        "category": "Other",
+        "subcategory": "Wifi",
+        "imageType": "svg"
+    }
 ]
