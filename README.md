@@ -58,10 +58,11 @@ were created and are owned by Google.
 [Google's HTML/CSS Style Guide](https://google.github.io/styleguide/htmlcssguide.html)
 
 ### Concepts
-- Most of the concepts used in this page are inspired by the MSC Homepage v2
+- Most of the concepts used in this page are inspired by the 
+[MSC Homepage v2](https://mschomepage.oggyp.com/)
   created by Ben Pratley and Oliver Springhall of G24.
 - The left navigation bar concept is taken from a video by YouTuber
-  fireship.io.
+  [Fireship](https://www.youtube.com/c/Fireship).
 - The search bar concept is inspired by a suggestion from Oscar Pritchard
   of G24.
 
