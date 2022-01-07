@@ -1,4 +1,5 @@
 # MSC Homepage v3
+https://github.com/kElnaDev/mschomepage-v3
 
 
 ## Overview
@@ -41,8 +42,9 @@ the search function.
 This version of the homepage, like the second, is a student project.
 
 ### Technical
-- The coding of the page was done solely by Kaelan Carlos of G24 (a.k.a.
-  Jam) unless otherwise specified.
+- The majority of the website was coded by Kaelan Carlos of G24 (a.k.a. Jam).
+- Code taken from other sources are marked as such.
+- Other contributions can be found on GitHub.
 - The website is proudly hosted by OggyP.
 
 ### Assets
