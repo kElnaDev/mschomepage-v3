@@ -61,8 +61,8 @@ were created and are owned by Google.
 - Most of the concepts used in this page are inspired by the 
 [MSC Homepage v2](https://mschomepage.oggyp.com/)
   created by Ben Pratley and Oliver Springhall of G24.
-- The left navigation bar concept is taken from a video by YouTuber
-  [Fireship](https://www.youtube.com/c/Fireship).
+- The left navigation bar concept is taken from a [video](https://youtu.be/biOMz4puGt8) 
+by YouTuber [Fireship](https://www.youtube.com/c/Fireship).
 - The search bar concept is inspired by a suggestion from Oscar Pritchard
   of G24.
 
