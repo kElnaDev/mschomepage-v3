@@ -97,3 +97,41 @@ nav {
   75% { transform: rotate($rotation); }
   100% { transform: rotate(0deg); }
 }
+
+
+
+
+
+/********************
+       MOBILE
+********************/
+@media only screen and (max-width: 1000px) {
+  nav {
+    & {
+      padding: 5px;
+      width: 100vw;
+      height: globals.$nav_w-link-icon + 25px;
+      top: auto;
+      bottom: 0;
+
+      @include flex.flex-space-between(row);
+    }
+
+    &:hover, &:focus { width: 100vw; }
+
+    a {
+      & {
+        margin: 0;
+        padding: 5px;
+        width: auto;
+      }
+
+      .nav-link-name { display: none; }
+
+      .material-icons-outlined {
+        width: globals.$nav_w-link-icon * 0.7;
+        font-size: globals.$nav_w-link-icon * 0.7;
+      }
+    }
+  }
+}

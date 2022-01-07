@@ -90,5 +90,36 @@ nav a img {
     transform: rotate(0deg);
   }
 }
+/********************
+       MOBILE
+********************/
+@media only screen and (max-width: 1000px) {
+  nav {
+    padding: 5px;
+    width: 100vw;
+    height: 73px;
+    top: auto;
+    bottom: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+  }
+  nav:hover, nav:focus {
+    width: 100vw;
+  }
+  nav a {
+    margin: 0;
+    padding: 5px;
+    width: auto;
+  }
+  nav a .nav-link-name {
+    display: none;
+  }
+  nav a .material-icons-outlined, nav a img {
+    width: 33.6px;
+    font-size: 33.6px;
+  }
+}
 
 /*# sourceMappingURL=nav.css.map */

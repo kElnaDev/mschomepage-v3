@@ -4,6 +4,7 @@ header {
   width: calc(100vw - 108px);
   height: 125px;
   position: fixed;
+  top: 0;
   z-index: 10;
   display: flex;
   justify-content: center;
@@ -39,6 +40,18 @@ header.collapsed h1 {
 header.collapsed img {
   display: block;
   width: 40px;
+}
+
+/********************
+       MOBILE
+********************/
+@media only screen and (max-width: 1000px) {
+  header {
+    width: 100vw;
+  }
+  header.collapsed .subtitle {
+    display: none;
+  }
 }
 
 /*# sourceMappingURL=header.css.map */

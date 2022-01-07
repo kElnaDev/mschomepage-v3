@@ -7,8 +7,9 @@ header {
     background: globals.$blue;
     padding: 0 20px 0 15px;
     width: calc(100vw - #{globals.$body-pl});
-    height: 125px;
+    height: globals.$header-h;
     position: fixed;
+    top: 0;
     z-index: 10;
 
     @include flex.flex-centre();
@@ -38,5 +39,24 @@ header.collapsed {
   img {
     display: block;
     width: $collapsed-height * 0.8;
+  }
+}
+
+
+
+
+
+/********************
+       MOBILE
+********************/
+@media only screen and (max-width: 1000px) {
+  header {
+    width: 100vw;
+
+    &.collapsed {
+      .subtitle {
+        display: none;
+      }
+    }
   }
 }

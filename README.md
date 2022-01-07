@@ -53,13 +53,13 @@ This version of the homepage, like the second, is a student project.
 - All fonts used were created and are owned by Google.
 - All icons used in the left navigation bar (except the OggyP Chess logo) 
 were created and are owned by Google.
-- All logos used are owned by their respective companies / organisations
+- All logos used are owned by their respective companies / organisations.
 - STYLEGUIDE.md borrows heavily from 
-[Google's HTML/CSS Style Guide](https://google.github.io/styleguide/htmlcssguide.html)
+[Google's HTML/CSS Style Guide](https://google.github.io/styleguide/htmlcssguide.html).
 
 ### Concepts
 - Most of the concepts used in this page are inspired by the 
-[MSC Homepage v2](https://mschomepage.oggyp.com/)
+[MSC Homepage v2](https://mschomepage.oggyp.com/).
   created by Ben Pratley and Oliver Springhall of G24.
 - The left navigation bar concept is taken from a [video](https://youtu.be/biOMz4puGt8) 
 by YouTuber [Fireship](https://www.youtube.com/c/Fireship).

@@ -31,7 +31,8 @@ body {
 }
 
 main {
-  padding: 170px 50px 50px;
+  margin-top: 130px;
+  padding: 50px;
   width: 100%;
   height: 100%;
 }
@@ -67,6 +68,66 @@ h3 {
   font-family: "Google Sans Display", sans-serif;
 }
 
+/********************
+       PANELS
+********************/
+.panel {
+  background: #31435d;
+  padding: 50px;
+  position: relative;
+  animation: pop-up 1s;
+  -webkit-border-radius: 15px;
+  -moz-border-radius: 15px;
+  border-radius: 15px;
+}
+.panel section:last-child {
+  margin-bottom: 0;
+}
+.panel h2 {
+  margin-bottom: 10px;
+}
+.panel h3 {
+  margin: 20px 0 5px;
+}
+.panel h3:first-child {
+  margin-top: 0;
+}
+.panel p {
+  margin: 10px 0 15px;
+}
+.panel p:last-child {
+  margin-bottom: 0;
+}
+.panel .material-icons-outlined {
+  display: inline;
+  position: relative;
+  top: 4px;
+  font-size: 20px;
+}
+.panel code {
+  background: #1C1B29;
+  border: 1px #464c50 solid;
+  padding: 2px;
+  display: inline;
+  font-family: "Google Sans Mono", monospace;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+}
+.panel li {
+  list-style-position: inside;
+}
+
+@keyframes pop-up {
+  from {
+    opacity: 0;
+    bottom: -100px;
+  }
+  to {
+    opacity: 1;
+    bottom: 0;
+  }
+}
 /********************
       BUTTONS
 ********************/
@@ -155,6 +216,14 @@ input:focus {
 @media only screen and (max-width: 1000px) {
   body {
     padding-left: 0;
+  }
+
+  main {
+    padding: 20px;
+  }
+
+  .button-wrapper {
+    align-items: center;
   }
 }
 
