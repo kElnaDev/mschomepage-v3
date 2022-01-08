@@ -1,9 +1,17 @@
-let events: Array<event>,
+let
+  JSONsource = 'resources/scripts/json/events.json',
+  events: Array<event>,
   eventDates: Array<eventDate> = [],
   eventsHTML: Array<[number, string]> = [],
   countdownInterval: number;
 
-$.getJSON('resources/scripts/json/events.json', (data):void => {
+try {
+  const urlParams = new URLSearchParams(window.location.search);
+  if (urlParams.get('source') === "examples")
+    JSONsource = 'resources/scripts/json/EXAMPLES/events.json'
+} catch (e) { console.warn('URLSearchParams interface not supported. Please upgrade your browser.') }
+
+$.getJSON(JSONsource, (data):void => {
   events = data;
 
   if (events.length !== 0)
