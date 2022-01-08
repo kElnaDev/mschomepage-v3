@@ -18,9 +18,9 @@ listed site. This is the reason for load-sites.ts.
 - categories.json is an array of strings for ease of indexing. It is also 
 for this reason that section IDs and their associated button wrappers **must** 
 be a lowercase version of the real category name where hyphens replace spaces.
-Check using `categoryAsId()`.
+Check using `phraseToId()`.
 - Unique logos are stored in the resources/images/CATEGORY-AS-ID folder, named 
-in the same format as category IDs. Check using the `categoryAsId()` function. 
+in the same format as category IDs. Check using the `phraseToId()` function. 
 The file types of these images are stored in the sites.json as `imageType`.
 - Repeated logos are stored in the resources/images/general folder. The file 
 path of these images are stored in the sites.json as `image`.
@@ -35,6 +35,10 @@ TypeScript support.
 order. I couldn't be bothered to refactor it.
 - search.scss is a mess because I didn't initially account for adding logos to 
 the search function.
+- There are two classes for indicating the current page in the nav bar, based 
+off of two common ideas. A survey showed `.current-page` was more popular as 
+it was 'cooler' and 'clearer'. `.disabled` is still there should the future 
+lead developer for this website find it more appealing.
 
 
 

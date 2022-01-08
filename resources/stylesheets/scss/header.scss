@@ -22,14 +22,17 @@ header {
 
   h1 { font-size: 30px; }
   .subtitle { font-size: 16px; }
-  img { display: none; }
+  
+  img {
+    position: absolute;
+    width: globals.$header-h * 0.8;
+    opacity: 0.1;
+  }
 }
 
 header.collapsed {
-  $collapsed-height: 50px;
-
   & {
-    height: $collapsed-height;
+    height: globals.$header-collapsed-h;
     flex-direction: row;
     justify-content: space-between;
   }
@@ -38,7 +41,9 @@ header.collapsed {
 
   img {
     display: block;
-    width: $collapsed-height * 0.8;
+    width: globals.$header-collapsed-h * 0.8;
+    position: static;
+    opacity: 1;
   }
 }
 
@@ -54,9 +59,9 @@ header.collapsed {
     width: 100vw;
 
     &.collapsed {
-      .subtitle {
-        display: none;
-      }
+      .subtitle { display: none;  }
+
+      img { width: globals.$header-collapsed-h * 0.6; }
     }
   }
 }

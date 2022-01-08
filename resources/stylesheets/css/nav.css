@@ -27,7 +27,7 @@ nav {
 nav:hover, nav:focus {
   width: 380px;
 }
-nav a {
+nav a, nav > span {
   overflow: hidden;
   margin: 5px 0;
   padding: 10px 0 10px 10px;
@@ -41,20 +41,48 @@ nav a {
   align-items: center;
   flex-direction: row;
 }
-nav a:hover, nav a:focus {
+nav a:hover, nav a:focus, nav > span:hover, nav > span:focus {
   background: rgba(255, 255, 255, 0.2);
 }
-nav a:hover img, nav a:focus img {
-  opacity: 100%;
+nav a:hover img, nav a:focus img, nav > span:hover img, nav > span:focus img {
+  opacity: 1;
 }
-nav a:hover .nav-link-name, nav a:focus .nav-link-name {
+nav a:hover .nav-link-name, nav a:focus .nav-link-name, nav > span:hover .nav-link-name, nav > span:focus .nav-link-name {
   color: white !important;
 }
-nav a:hover .material-icons-outlined, nav a:hover img, nav a:focus .material-icons-outlined, nav a:focus img {
+nav a:hover .material-icons-outlined, nav a:hover img, nav a:focus .material-icons-outlined, nav a:focus img, nav > span:hover .material-icons-outlined, nav > span:hover img, nav > span:focus .material-icons-outlined, nav > span:focus img {
   color: #11b4da !important;
   animation: shake 300ms;
 }
-nav a .nav-link-name {
+nav a.current-page, nav > span.current-page {
+  background: rgba(255, 255, 255, 0.25);
+  cursor: default;
+}
+nav a.current-page img, nav > span.current-page img {
+  opacity: 1;
+}
+nav a.current-page .nav-link-name, nav > span.current-page .nav-link-name {
+  color: #11b4da !important;
+}
+nav a.current-page .material-icons-outlined, nav a.current-page img, nav > span.current-page .material-icons-outlined, nav > span.current-page img {
+  color: #11b4da !important;
+  animation: none;
+}
+nav a.disabled, nav > span.disabled {
+  background: none !important;
+  cursor: not-allowed;
+}
+nav a.disabled img, nav > span.disabled img {
+  opacity: 0.1;
+}
+nav a.disabled .nav-link-name, nav > span.disabled .nav-link-name {
+  color: rgba(106, 120, 129, 0.1) !important;
+}
+nav a.disabled .material-icons-outlined, nav a.disabled img, nav > span.disabled .material-icons-outlined, nav > span.disabled img {
+  color: rgba(106, 120, 129, 0.1) !important;
+  animation: none;
+}
+nav a .nav-link-name, nav > span .nav-link-name {
   overflow: hidden;
   padding-left: 15px;
   width: 100%;
@@ -63,13 +91,13 @@ nav a .nav-link-name {
   color: #6a7881;
   white-space: nowrap;
 }
-nav a .material-icons-outlined, nav a img {
+nav a .material-icons-outlined, nav a img, nav > span .material-icons-outlined, nav > span img {
   width: 48px;
   display: block;
   font-size: 48px;
   color: #6a7881;
 }
-nav a img {
+nav a img, nav > span img {
   opacity: 0.5;
 }
 
@@ -108,15 +136,15 @@ nav a img {
   nav:hover, nav:focus {
     width: 100vw;
   }
-  nav a {
+  nav a, nav > span {
     margin: 0;
     padding: 5px;
     width: auto;
   }
-  nav a .nav-link-name {
+  nav a .nav-link-name, nav > span .nav-link-name {
     display: none;
   }
-  nav a .material-icons-outlined, nav a img {
+  nav a .material-icons-outlined, nav a img, nav > span .material-icons-outlined, nav > span img {
     width: 33.6px;
     font-size: 33.6px;
   }

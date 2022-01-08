@@ -35,7 +35,7 @@ nav {
   }
 
 
-  a {
+  a, > span {
     & {
       overflow: hidden;
       margin: 5px 0;
@@ -50,12 +50,37 @@ nav {
     &:hover, &:focus {
       background: rgba(255, 255, 255, 0.2);
 
-      img { opacity: 100%; }
+      img { opacity: 1; }
       .nav-link-name { color: white !important; }
 
       .material-icons-outlined {
         color: globals.$turquoise !important;
         animation: shake 300ms;
+      }
+    }
+
+
+    &.current-page {
+      background: rgba(255, 255, 255, 0.25);
+      cursor: default;
+
+      img { opacity: 1; }
+      .nav-link-name { color: globals.$turquoise !important; }
+      .material-icons-outlined {
+        color: globals.$turquoise !important;
+        animation: none;
+      }
+    }
+
+    &.disabled {
+      background: none !important;
+      cursor: not-allowed;
+
+      img { opacity: 0.1; }
+      .nav-link-name { color: rgba(globals.$light, 0.1) !important; }
+      .material-icons-outlined {
+        color: rgba(globals.$light, 0.1) !important;
+        animation: none;
       }
     }
 
@@ -119,7 +144,7 @@ nav {
 
     &:hover, &:focus { width: 100vw; }
 
-    a {
+    a, > span {
       & {
         margin: 0;
         padding: 5px;

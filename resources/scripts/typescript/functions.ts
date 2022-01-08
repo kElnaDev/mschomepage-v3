@@ -13,7 +13,7 @@ function highlightQuery(data: string, query: string): string {
 }
 
 
-function categoryToId(category: string, includeHash = true): string {
+function phraseToId(category: string, includeHash = true): string {
   return ((includeHash)? "#" : "") +
     category.toLowerCase()
       .replace(/[^a-zA-Z0-9\s]/g, "")
@@ -31,8 +31,49 @@ function getImage(site: website): string {
     image = `resources/images/logos/general/${site.image}`;
   } else if (site.imageType) {
     image =
-      `resources/images/logos/${categoryToId(site.category, false)}/${categoryToId(site.name, false)}.${site.imageType}`;
+      `resources/images/logos/${phraseToId(site.category, false)}/${phraseToId(site.name, false)}.${site.imageType}`;
   }
 
   return image;
+}
+
+function timeToString(date: Date): string {
+  let hours24 = date.getHours(),
+    minutes = date.getMinutes(),
+    dayHalf = (hours24 >= 12)? "pm" : "am",
+    hours12 = (hours24 > 12)? hours24 - 12 : hours24;
+
+    return ((hours24 === 0)? 12: hours12) + ":" + ((minutes < 10)? "0" : "") + minutes + " " + dayHalf;
+}
+
+function dateToString(date: Date): string {
+  // Number to date
+  const monthName = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
+  const weekday = ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"];
+
+  // Actual stuff
+  let day = weekday[date.getDay()],
+    dateNum = date.getDate(),
+    month = monthName[date.getMonth()];
+
+  return day + " " + dateNum + " " + month;
+}
+
+function getTimeDiff(from: Date, to: Date): time {
+  // this section was taken from https://bearnithi.com/ because it was 7 am
+  // (couldn't sleep, so I decided to code) and I was too lazy to think
+  let diff = Math.abs(from.getTime() - to.getTime()) / 1000;
+
+  const days = Math.floor(diff / 86400);
+  diff -= days * 86400;
+
+  const hours = Math.floor(diff / 3600) % 24;
+  diff -= hours * 3600;
+
+  const minutes = Math.floor(diff / 60) % 60;
+  diff -= minutes * 60;
+
+  const seconds = Math.floor(diff);
+
+  return {days, hours, minutes, seconds}
 }

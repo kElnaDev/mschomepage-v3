@@ -21,7 +21,7 @@ $.getJSON("resources/scripts/json/sites.json", (res): void => {
   let catColour;
   for (let i = 0; i < sites.length; i++) {
     let site = sites[i];
-    let wrapper = ((site.subcategory)? categoryToId(site.subcategory) : categoryToId(site.category)) + "-wrapper";
+    let wrapper = ((site.subcategory)? phraseToId(site.subcategory) : phraseToId(site.category)) + "-wrapper";
 
 
     // Generate category sections
@@ -35,9 +35,9 @@ $.getJSON("resources/scripts/json/sites.json", (res): void => {
       // category html
       categories.push(site.category);
       $('main').append(
-        `<section id="${categoryToId(site.category, false)}">` +
+        `<section id="${phraseToId(site.category, false)}">` +
         `  <h2><span>${site.category}</span></h2>` +
-        `  <div id="${categoryToId(site.category, false)}-wrapper" class="button-wrapper ${catColour}"></div>` +
+        `  <div id="${phraseToId(site.category, false)}-wrapper" class="button-wrapper ${catColour}"></div>` +
         `</section>`
       );
     }
@@ -46,9 +46,9 @@ $.getJSON("resources/scripts/json/sites.json", (res): void => {
     // Generate subcategory sections
     if (site.subcategory && !subcategories.includes(site.subcategory)) {
       subcategories.push(site.subcategory);
-      $(`${categoryToId(site.category)}`).append(
+      $(`${phraseToId(site.category)}`).append(
         `<h3>${site.subcategory}</h3>` +
-        `<div id="${categoryToId(site.subcategory, false)}-wrapper" class="button-wrapper ${catColour}"></div>`
+        `<div id="${phraseToId(site.subcategory, false)}-wrapper" class="button-wrapper ${catColour}"></div>`
       );
     }
 
@@ -66,7 +66,7 @@ $.getJSON("resources/scripts/json/sites.json", (res): void => {
   }
 
   for (let i = 0; i < categories.length; i++) {
-    if (checkEmpty(categoryToId(categories[i]) + "-wrapper"))
-      $(categoryToId(categories[i]) + "-wrapper").remove();
+    if (checkEmpty(phraseToId(categories[i]) + "-wrapper"))
+      $(phraseToId(categories[i]) + "-wrapper").remove();
   }
 });

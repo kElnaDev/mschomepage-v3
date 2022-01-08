@@ -26,7 +26,9 @@ header .subtitle {
   font-size: 16px;
 }
 header img {
-  display: none;
+  position: absolute;
+  width: 100px;
+  opacity: 0.1;
 }
 
 header.collapsed {
@@ -40,6 +42,8 @@ header.collapsed h1 {
 header.collapsed img {
   display: block;
   width: 40px;
+  position: static;
+  opacity: 1;
 }
 
 /********************
@@ -51,6 +55,9 @@ header.collapsed img {
   }
   header.collapsed .subtitle {
     display: none;
+  }
+  header.collapsed img {
+    width: 30px;
   }
 }
 

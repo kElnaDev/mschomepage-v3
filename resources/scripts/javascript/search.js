@@ -35,7 +35,7 @@ function addCategory(category, query) {
     matchFound = true;
     let catName = highlightQuery(category, query);
     searchSuggestions.append(`<li class="ss-category">` +
-        `  <a href="${categoryToId(category)}">` +
+        `  <a href="${phraseToId(category)}">` +
         `    Category: <span class="ss-category-name">${catName}</span>` +
         `  </a>` +
         `</li>`);
