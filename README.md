@@ -46,7 +46,7 @@ lead developer for this website find it more appealing.
 This version of the homepage, like the second, is a student project.
 
 ### Technical
-- The majority of the website was coded by Kaelan Carlos of G24 (a.k.a. Jam).
+- The majority of the website was coded by Kaelan Carlos of G24 (a.k.a. kElnaDev).
 - Code taken from other sources are marked as such.
 - Other contributions can be found on GitHub.
 - The website is proudly hosted by OggyP.
