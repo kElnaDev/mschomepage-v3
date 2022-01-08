@@ -39,6 +39,7 @@ body {
   padding-left: globals.$body-pl;
   min-width: 100vw;
   min-height: 100vh;
+  position: relative;
 }
 
 main {
@@ -230,6 +231,31 @@ input {
 
 
 
+/********************
+       FOOTER
+********************/
+footer {
+  display: flex;
+  flex-direction: row;
+  position: absolute;
+  bottom: 10px;
+  right: 20px;
+  text-align: right;
+
+  * {
+    font-family: globals.$font-2;
+    font-size: 14px;
+    color: globals.$grey;
+  }
+
+  .footer-divider {
+    margin: 0 10px;
+  }
+}
+
+
+
+
 
 /********************
        MOBILE
@@ -246,5 +272,16 @@ input {
 
   .button-wrapper {
     align-items: center;
+  }
+
+  footer {
+    margin-bottom: 10px;
+    width: 100vw;
+    flex-direction: column;
+    bottom: 0;
+    right: 0;
+    text-align: center;
+
+    .footer-divider { display: none; }
   }
 }

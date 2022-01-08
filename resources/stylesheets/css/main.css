@@ -28,6 +28,7 @@ body {
   padding-left: 108px;
   min-width: 100vw;
   min-height: 100vh;
+  position: relative;
 }
 
 main {
@@ -211,6 +212,26 @@ input:focus {
 }
 
 /********************
+       FOOTER
+********************/
+footer {
+  display: flex;
+  flex-direction: row;
+  position: absolute;
+  bottom: 10px;
+  right: 20px;
+  text-align: right;
+}
+footer * {
+  font-family: "Google Sans Mono", monospace;
+  font-size: 14px;
+  color: #464c50;
+}
+footer .footer-divider {
+  margin: 0 10px;
+}
+
+/********************
        MOBILE
 ********************/
 @media only screen and (max-width: 1000px) {
@@ -225,6 +246,18 @@ input:focus {
 
   .button-wrapper {
     align-items: center;
+  }
+
+  footer {
+    margin-bottom: 10px;
+    width: 100vw;
+    flex-direction: column;
+    bottom: 0;
+    right: 0;
+    text-align: center;
+  }
+  footer .footer-divider {
+    display: none;
   }
 }
 
