@@ -22,20 +22,20 @@ searchBar.on('input', () => {
 
 
   for (let i = 0; i < categories.length; i++) // used for-loop instead of forEach() for speed
-    if (categories[i].toLowerCase().includes(query)) addCategory(categories[i], ogQuery);
+    if (includes(categories[i].toLowerCase(), query)) addCategory(categories[i], ogQuery);
 
 
   for (let i = 0; i < sites.length; i++) {
     let site = sites[i];
 
     // split into multiple branches for readability
-    if (site.name.toLowerCase().includes(query))
+    if (includes(site.name.toLowerCase(), query))
       addSite(site, ogQuery);
-    else if (site.url.toLowerCase().includes(query))
+    else if (includes(site.url.toLowerCase(), query))
       addSite(site, ogQuery)
-    else if (site.category.toLowerCase().includes(query))
+    else if (includes(site.category.toLowerCase(), query))
       addSite(site, ogQuery)
-    else if (site.subcategory && site.subcategory.toLowerCase().includes(query))
+    else if (includes(site.subcategory && site.subcategory.toLowerCase(), query))
       addSite(site, ogQuery)
   }
 

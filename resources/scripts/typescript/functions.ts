@@ -77,3 +77,7 @@ function getTimeDiff(from: Date, to: Date): time {
 
   return {days, hours, minutes, seconds}
 }
+
+function includes(data: string | Array<string>, match: string): boolean {
+  return data.indexOf(match) !== -1;
+}

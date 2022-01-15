@@ -5,10 +5,11 @@ function sanitiseInput(input) {
     return input;
 }
 function highlightQuery(data, query) {
-    const regEscape = v => v.replace(/[-[\]{}()*+?.,\\^$|#\s]/g, '\\$&');
-    return data.replace(new RegExp(regEscape(query), "gi"), (match) => `<span class='ss-query'>${match}</span>`);
+    var regEscape = function (v) { return v.replace(/[-[\]{}()*+?.,\\^$|#\s]/g, '\\$&'); };
+    return data.replace(new RegExp(regEscape(query), "gi"), function (match) { return "<span class='ss-query'>".concat(match, "</span>"); });
 }
-function phraseToId(category, includeHash = true) {
+function phraseToId(category, includeHash) {
+    if (includeHash === void 0) { includeHash = true; }
     return ((includeHash) ? "#" : "") +
         category.toLowerCase()
             .replace(/[^a-zA-Z0-9\s]/g, "")
@@ -18,35 +19,38 @@ function checkEmpty(element) {
     return ($(element).html().trim() === '');
 }
 function getImage(site) {
-    let image;
+    var image;
     if (site.image) {
-        image = `resources/images/logos/general/${site.image}`;
+        image = "resources/images/logos/general/".concat(site.image);
     }
     else if (site.imageType) {
         image =
-            `resources/images/logos/${phraseToId(site.category, false)}/${phraseToId(site.name, false)}.${site.imageType}`;
+            "resources/images/logos/".concat(phraseToId(site.category, false), "/").concat(phraseToId(site.name, false), ".").concat(site.imageType);
     }
     return image;
 }
 function timeToString(date) {
-    let hours24 = date.getHours(), minutes = date.getMinutes(), dayHalf = (hours24 >= 12) ? "pm" : "am", hours12 = (hours24 > 12) ? hours24 - 12 : hours24;
+    var hours24 = date.getHours(), minutes = date.getMinutes(), dayHalf = (hours24 >= 12) ? "pm" : "am", hours12 = (hours24 > 12) ? hours24 - 12 : hours24;
     return ((hours24 === 0) ? 12 : hours12) + ":" + ((minutes < 10) ? "0" : "") + minutes + " " + dayHalf;
 }
 function dateToString(date) {
-    const monthName = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
-    const weekday = ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"];
-    let day = weekday[date.getDay()], dateNum = date.getDate(), month = monthName[date.getMonth()];
+    var monthName = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
+    var weekday = ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"];
+    var day = weekday[date.getDay()], dateNum = date.getDate(), month = monthName[date.getMonth()];
     return day + " " + dateNum + " " + month;
 }
 function getTimeDiff(from, to) {
-    let diff = Math.abs(from.getTime() - to.getTime()) / 1000;
-    const days = Math.floor(diff / 86400);
+    var diff = Math.abs(from.getTime() - to.getTime()) / 1000;
+    var days = Math.floor(diff / 86400);
     diff -= days * 86400;
-    const hours = Math.floor(diff / 3600) % 24;
+    var hours = Math.floor(diff / 3600) % 24;
     diff -= hours * 3600;
-    const minutes = Math.floor(diff / 60) % 60;
+    var minutes = Math.floor(diff / 60) % 60;
     diff -= minutes * 60;
-    const seconds = Math.floor(diff);
-    return { days, hours, minutes, seconds };
+    var seconds = Math.floor(diff);
+    return { days: days, hours: hours, minutes: minutes, seconds: seconds };
+}
+function includes(data, match) {
+    return data.indexOf(match) !== -1;
 }
 //# sourceMappingURL=functions.js.map

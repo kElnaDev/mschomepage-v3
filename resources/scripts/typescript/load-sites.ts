@@ -25,7 +25,7 @@ $.getJSON("resources/scripts/json/sites.json", (res): void => {
 
 
     // Generate category sections
-    if (!categories.includes(site.category)) {
+    if (!includes(categories, site.category)) {
       // category colour
       catColour = categoryColours[currentCatColour];
       currentCatColour++;
@@ -44,7 +44,7 @@ $.getJSON("resources/scripts/json/sites.json", (res): void => {
 
 
     // Generate subcategory sections
-    if (site.subcategory && !subcategories.includes(site.subcategory)) {
+    if (site.subcategory && !includes(subcategories, site.subcategory)) {
       subcategories.push(site.subcategory);
       $(`${phraseToId(site.category)}`).append(
         `<h3>${site.subcategory}</h3>` +

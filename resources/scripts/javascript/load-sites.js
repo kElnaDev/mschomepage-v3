@@ -1,4 +1,4 @@
-let sites, categories = [], subcategories = [], categoryColours = [
+var sites, categories = [], subcategories = [], categoryColours = [
     "blue",
     "purple",
     "pink",
@@ -7,35 +7,35 @@ let sites, categories = [], subcategories = [], categoryColours = [
     "yellow",
     "green"
 ], currentCatColour = 0;
-$.getJSON("resources/scripts/json/sites.json", (res) => {
+$.getJSON("resources/scripts/json/sites.json", function (res) {
     sites = res;
-    let catColour;
-    for (let i = 0; i < sites.length; i++) {
-        let site = sites[i];
-        let wrapper = ((site.subcategory) ? phraseToId(site.subcategory) : phraseToId(site.category)) + "-wrapper";
-        if (!categories.includes(site.category)) {
+    var catColour;
+    for (var i = 0; i < sites.length; i++) {
+        var site = sites[i];
+        var wrapper = ((site.subcategory) ? phraseToId(site.subcategory) : phraseToId(site.category)) + "-wrapper";
+        if (!includes(categories, site.category)) {
             catColour = categoryColours[currentCatColour];
             currentCatColour++;
             if (currentCatColour >= categoryColours.length)
                 currentCatColour = 0;
             categories.push(site.category);
-            $('main').append(`<section id="${phraseToId(site.category, false)}">` +
-                `  <h2><span>${site.category}</span></h2>` +
-                `  <div id="${phraseToId(site.category, false)}-wrapper" class="button-wrapper ${catColour}"></div>` +
-                `</section>`);
+            $('main').append("<section id=\"".concat(phraseToId(site.category, false), "\">") +
+                "  <h2><span>".concat(site.category, "</span></h2>") +
+                "  <div id=\"".concat(phraseToId(site.category, false), "-wrapper\" class=\"button-wrapper ").concat(catColour, "\"></div>") +
+                "</section>");
         }
-        if (site.subcategory && !subcategories.includes(site.subcategory)) {
+        if (site.subcategory && !includes(subcategories, site.subcategory)) {
             subcategories.push(site.subcategory);
-            $(`${phraseToId(site.category)}`).append(`<h3>${site.subcategory}</h3>` +
-                `<div id="${phraseToId(site.subcategory, false)}-wrapper" class="button-wrapper ${catColour}"></div>`);
+            $("".concat(phraseToId(site.category))).append("<h3>".concat(site.subcategory, "</h3>") +
+                "<div id=\"".concat(phraseToId(site.subcategory, false), "-wrapper\" class=\"button-wrapper ").concat(catColour, "\"></div>"));
         }
-        let image = getImage(site);
-        $(wrapper).append(`<a href="${site.url}" class="button">` +
-            ((image) ? `<img src="${image}" alt="">` : '') +
+        var image = getImage(site);
+        $(wrapper).append("<a href=\"".concat(site.url, "\" class=\"button\">") +
+            ((image) ? "<img src=\"".concat(image, "\" alt=\"\">") : '') +
             site.name +
-            `</a>`);
+            "</a>");
     }
-    for (let i = 0; i < categories.length; i++) {
+    for (var i = 0; i < categories.length; i++) {
         if (checkEmpty(phraseToId(categories[i]) + "-wrapper"))
             $(phraseToId(categories[i]) + "-wrapper").remove();
     }
