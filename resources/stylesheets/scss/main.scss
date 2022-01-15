@@ -38,7 +38,7 @@ body {
   overflow-x: hidden;
   padding-left: globals.$body-pl;
   min-width: 100vw;
-  min-height: 100vh;
+  min-height: calc(100vh - #{globals.$header-h + 5});
   position: relative;
 }
 

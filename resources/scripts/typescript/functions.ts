@@ -1,7 +1,7 @@
-function sanitiseInput(input) {
-  input = input.replaceAll("%", "%25");
-  input = input.replaceAll("&", "%26");
-  input = input.replaceAll("+", "%2B");
+function sanitiseInput(input: string): string {
+  input = input.replace(/%/g, "%25");
+  input = input.replace(/&/g, "%26");
+  input = input.replace(/\+/g, "%2B");
   return input;
 }
 

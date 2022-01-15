@@ -49,7 +49,7 @@
   font-family: "Google Sans Mono", monospace;
 }
 .event-timing-countdown .event-countdown-big {
-  margin-right: 20px;
+  margin-right: 45px;
 }
 
 .event-info {
@@ -109,6 +109,9 @@
     margin-top: 10px;
     flex-direction: column;
     font-size: 50px;
+  }
+  .event-timing-countdown .event-countdown-big {
+    margin-right: 0;
   }
   .event-info {
     margin-top: 50px;
