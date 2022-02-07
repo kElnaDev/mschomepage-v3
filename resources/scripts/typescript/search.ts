@@ -24,6 +24,9 @@ searchBar.on('input', () => {
   for (let i = 0; i < categories.length; i++) // used for-loop instead of forEach() for speed
     if (includes(categories[i].toLowerCase(), query)) addCategory(categories[i], ogQuery);
 
+  for (let i = 0; i < subcategories.length; i++) // used for-loop instead of forEach() for speed
+    if (includes(subcategories[i].toLowerCase(), query)) addCategory(subcategories[i], ogQuery, true);
+
 
   for (let i = 0; i < sites.length; i++) {
     let site = sites[i];
@@ -35,7 +38,7 @@ searchBar.on('input', () => {
       addSite(site, ogQuery)
     else if (includes(site.category.toLowerCase(), query))
       addSite(site, ogQuery)
-    else if (includes(site.subcategory && site.subcategory.toLowerCase(), query))
+    else if (site.subcategory && includes(site.subcategory.toLowerCase(), query))
       addSite(site, ogQuery)
   }
 
@@ -44,7 +47,7 @@ searchBar.on('input', () => {
 
 
 // Manage html
-function addCategory(category: string, query: string): void {
+function addCategory(category: string, query: string, subcategory = false): void {
   matchFound = true;
 
   let catName = highlightQuery(category, query);
@@ -53,7 +56,7 @@ function addCategory(category: string, query: string): void {
   searchSuggestions.append(
     `<li class="ss-category">` +
     `  <a href="${phraseToId(category)}">` +
-    `    Category: <span class="ss-category-name">${catName}</span>` +
+    `    ${(subcategory)? "Subc" : "C"}ategory: <span class="ss-category-name">${catName}</span>` +
     `  </a>` +
     `</li>`
   );

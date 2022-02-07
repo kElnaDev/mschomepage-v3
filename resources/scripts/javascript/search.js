@@ -18,6 +18,9 @@ searchBar.on('input', function () {
     for (var i = 0; i < categories.length; i++)
         if (includes(categories[i].toLowerCase(), query))
             addCategory(categories[i], ogQuery);
+    for (var i = 0; i < subcategories.length; i++)
+        if (includes(subcategories[i].toLowerCase(), query))
+            addCategory(subcategories[i], ogQuery, true);
     for (var i = 0; i < sites.length; i++) {
         var site = sites[i];
         if (includes(site.name.toLowerCase(), query))
@@ -26,17 +29,18 @@ searchBar.on('input', function () {
             addSite(site, ogQuery);
         else if (includes(site.category.toLowerCase(), query))
             addSite(site, ogQuery);
-        else if (includes(site.subcategory && site.subcategory.toLowerCase(), query))
+        else if (site.subcategory && includes(site.subcategory.toLowerCase(), query))
             addSite(site, ogQuery);
     }
     addWebSearch(ogQuery);
 });
-function addCategory(category, query) {
+function addCategory(category, query, subcategory) {
+    if (subcategory === void 0) { subcategory = false; }
     matchFound = true;
     var catName = highlightQuery(category, query);
     searchSuggestions.append("<li class=\"ss-category\">" +
         "  <a href=\"".concat(phraseToId(category), "\">") +
-        "    Category: <span class=\"ss-category-name\">".concat(catName, "</span>") +
+        "    ".concat((subcategory) ? "Subc" : "C", "ategory: <span class=\"ss-category-name\">").concat(catName, "</span>") +
         "  </a>" +
         "</li>");
 }
