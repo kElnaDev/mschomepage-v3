@@ -141,12 +141,13 @@ h3 {
 
 .button, button {
   background: #1172b9;
+  box-sizing: content-box;
   outline: none;
-  margin: 0 15px 15px 0;
+  margin: 10px;
   border: none;
   padding: 5px;
-  width: 125px;
-  height: 125px;
+  width: 115px;
+  height: 115px;
   font-family: "Google Sans Text", sans-serif;
   text-align: center;
   text-decoration: none;
@@ -161,7 +162,15 @@ h3 {
   transition: 100ms;
 }
 .button:hover, .button:focus, .button:focus-within, button:hover, button:focus, button:focus-within {
+  margin: 5px;
+  padding: 10px;
   filter: brightness(80%);
+}
+.button:hover:first-child, .button:focus:first-child, .button:focus-within:first-child, button:hover:first-child, button:focus:first-child, button:focus-within:first-child {
+  margin-left: -5px;
+}
+.button:first-child, button:first-child {
+  margin-left: 0;
 }
 .purple .button, .purple button {
   background: #6811b9;

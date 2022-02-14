@@ -2,6 +2,8 @@ var searchBar = $('#search-bar');
 var searchSuggestions = $('#search-suggestions');
 var ssWrapper = $('#search-suggestions-wrapper');
 var matchFound;
+var firstResult;
+var selected;
 searchBar.on('input', function () {
     var ogQuery = searchBar.val().toString();
     var query = ogQuery.toLowerCase();
@@ -15,12 +17,13 @@ searchBar.on('input', function () {
     else {
         ssWrapper.removeClass("empty");
     }
+    firstResult = true;
     for (var i = 0; i < categories.length; i++)
         if (includes(categories[i].toLowerCase(), query))
-            addCategory(categories[i], ogQuery);
+            addCategory(makeId(), categories[i], ogQuery);
     for (var i = 0; i < subcategories.length; i++)
         if (includes(subcategories[i].toLowerCase(), query))
-            addCategory(subcategories[i], ogQuery, true);
+            addCategory(makeId(), subcategories[i], ogQuery, true);
     for (var i = 0; i < sites.length; i++) {
         var site = sites[i];
         if (includes(site.name.toLowerCase(), query))
@@ -34,11 +37,11 @@ searchBar.on('input', function () {
     }
     addWebSearch(ogQuery);
 });
-function addCategory(category, query, subcategory) {
+function addCategory(id, category, query, subcategory) {
     if (subcategory === void 0) { subcategory = false; }
     matchFound = true;
     var catName = highlightQuery(category, query);
-    searchSuggestions.append("<li class=\"ss-category\">" +
+    searchSuggestions.append("<li class=\"ss-category\" id=".concat(id, ">") +
         "  <a href=\"".concat(phraseToId(category), "\">") +
         "    ".concat((subcategory) ? "Subc" : "C", "ategory: <span class=\"ss-category-name\">").concat(catName, "</span>") +
         "  </a>" +

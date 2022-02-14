@@ -3,6 +3,11 @@ const searchBar = $('#search-bar');
 const searchSuggestions = $('#search-suggestions');
 const ssWrapper = $('#search-suggestions-wrapper');
 let matchFound: boolean;
+let firstResult: boolean;
+let selected: string;
+
+// searchBar.trigger('focus');
+
 searchBar.on('input', () => {
   let ogQuery = searchBar.val().toString();
   let query = ogQuery.toLowerCase();
@@ -14,18 +19,19 @@ searchBar.on('input', () => {
   searchSuggestions.empty();
   if (query.length < 1) {
     $('#search-web').remove();
-    ssWrapper.addClass("empty")
+    ssWrapper.addClass("empty");
     return;
   } else {
-    ssWrapper.removeClass("empty")
+    ssWrapper.removeClass("empty");
   }
 
 
+  firstResult = true;
   for (let i = 0; i < categories.length; i++) // used for-loop instead of forEach() for speed
-    if (includes(categories[i].toLowerCase(), query)) addCategory(categories[i], ogQuery);
+    if (includes(categories[i].toLowerCase(), query)) addCategory(makeId(), categories[i], ogQuery);
 
   for (let i = 0; i < subcategories.length; i++) // used for-loop instead of forEach() for speed
-    if (includes(subcategories[i].toLowerCase(), query)) addCategory(subcategories[i], ogQuery, true);
+    if (includes(subcategories[i].toLowerCase(), query)) addCategory(makeId(), subcategories[i], ogQuery, true);
 
 
   for (let i = 0; i < sites.length; i++) {
@@ -35,11 +41,11 @@ searchBar.on('input', () => {
     if (includes(site.name.toLowerCase(), query))
       addSite(site, ogQuery);
     else if (includes(site.url.toLowerCase(), query))
-      addSite(site, ogQuery)
+      addSite(site, ogQuery);
     else if (includes(site.category.toLowerCase(), query))
-      addSite(site, ogQuery)
+      addSite(site, ogQuery);
     else if (site.subcategory && includes(site.subcategory.toLowerCase(), query))
-      addSite(site, ogQuery)
+      addSite(site, ogQuery);
   }
 
   addWebSearch(ogQuery);
@@ -47,14 +53,14 @@ searchBar.on('input', () => {
 
 
 // Manage html
-function addCategory(category: string, query: string, subcategory = false): void {
+function addCategory(id: string, category: string, query: string, subcategory = false): void {
   matchFound = true;
 
   let catName = highlightQuery(category, query);
 
   // add to html
   searchSuggestions.append(
-    `<li class="ss-category">` +
+    `<li class="ss-category" id=${id}>` +
     `  <a href="${phraseToId(category)}">` +
     `    ${(subcategory)? "Subc" : "C"}ategory: <span class="ss-category-name">${catName}</span>` +
     `  </a>` +

@@ -168,12 +168,13 @@ h3 {
 .button, button {
   & {
     background: globals.$blue;
+    box-sizing: content-box;
     outline: none;
-    margin: 0 15px 15px 0;
+    margin: 10px;
     border: none;
     padding: 5px;
-    width: 125px;
-    height: 125px;
+    width: 115px;
+    height: 115px;
 
     font-family: globals.$font-4;
     text-align: center;
@@ -184,7 +185,17 @@ h3 {
   }
 
   &:hover, &:focus, &:focus-within {
+    margin: 5px;
+    padding: 10px;
     filter: brightness(80%);
+
+    &:first-child {
+      margin-left: -5px;
+    }
+  }
+
+  &:first-child {
+    margin-left: 0;
   }
 
   .purple & { background: globals.$purple; }
