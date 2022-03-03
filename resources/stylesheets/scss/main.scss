@@ -185,6 +185,7 @@ h3 {
 ********************/
 .button-wrapper {
   margin-bottom: 5px;
+  margin-left: -10px;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
@@ -213,14 +214,6 @@ h3 {
     margin: 5px;
     padding: 10px;
     filter: brightness(80%);
-
-    &:first-child {
-      margin-left: -5px;
-    }
-  }
-
-  &:first-child {
-    margin-left: 0;
   }
 
   .purple & { background: globals.$purple; }
