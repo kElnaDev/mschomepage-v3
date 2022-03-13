@@ -183,6 +183,18 @@
     "imageType": "png"
   },
   {
+    "name": "Desmos",
+    "url": "https://www.desmos.com/calculator",
+    "category": "Maths",
+    "imageType": "png"
+  },
+  {
+    "name": "Symbolab",
+    "url": "https://www.symbolab.com/",
+    "category": "Maths",
+    "imageType": "png"
+  },
+  {
     "name": "Windows",
     "url": "https://pages.assessform.edu.au/uploads/files/Release/NAP%20Locked%20down%20browser.msi",
     "category": "Tests",
