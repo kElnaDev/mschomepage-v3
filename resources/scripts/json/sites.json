@@ -35,6 +35,9 @@
     "category": "G Suite",
     "imageType": "svg"
   },
+
+
+
   {
     "name": "Official Website",
     "url": "https://nbscmanlys-h.schools.nsw.gov.au/",
@@ -43,7 +46,7 @@
   },
   {
     "name": "DoE Portal",
-    "url": "https://nbscmanlys-h.schools.nsw.gov.au/",
+    "url": "https://portal.det.nsw.edu.au/",
     "category": "Manly Websites",
     "image": "nsw.png"
   },
@@ -95,6 +98,7 @@
     "category": "Manly Websites",
     "imageType": "png"
   },
+
   {
     "name": "eLibrary",
     "url": "https://manlycampus.wheelers.co/",
@@ -116,6 +120,9 @@
     "subcategory": "Library",
     "imageType": "png"
   },
+
+
+
   {
     "name": "Zoom",
     "url": "https://nsweducation.zoom.us/",
@@ -134,6 +141,9 @@
     "category": "Online Meetings",
     "imageType": "png"
   },
+
+
+
   {
     "name": "Creative Cloud",
     "url": "https://creativecloud.adobe.com/",
@@ -164,6 +174,9 @@
     "category": "Downloads",
     "image": "nsw.png"
   },
+
+
+
   {
     "name": "Khan Academy",
     "url": "https://www.khanacademy.org/login",
@@ -182,6 +195,9 @@
     "category": "Study",
     "imageType": "png"
   },
+
+
+
   {
     "name": "Desmos",
     "url": "https://www.desmos.com/calculator",
@@ -194,6 +210,9 @@
     "category": "Maths",
     "imageType": "png"
   },
+
+
+
   {
     "name": "Windows",
     "url": "https://pages.assessform.edu.au/uploads/files/Release/NAP%20Locked%20down%20browser.msi",
@@ -215,6 +234,7 @@
     "subcategory": "Naplan",
     "imageType": "png"
   },
+
   {
     "name": "Windows",
     "url": "https://bosho.boardofstudies.nsw.edu.au/Download/Docs/Windows-LabEdition.zip",
@@ -229,6 +249,9 @@
     "subcategory": "Respondus",
     "image": "macos.png"
   },
+
+
+
   {
     "name": "TurnItIn",
     "url": "https://www.turnitin.com/",
@@ -253,6 +276,7 @@
     "category": "Other",
     "imageType": "png"
   },
+
   {
     "name": "Windows",
     "url": "https://archive.nbscmanlys-h.schools.nsw.edu.au/Windows%20Internet%20Settings.pdf",
