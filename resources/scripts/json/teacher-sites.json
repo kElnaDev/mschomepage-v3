@@ -90,5 +90,13 @@
     "url": "https://nsw-students.onthehub.com/WebStore/Welcome.aspx",
     "category": "Downloads",
     "image": "nsw.png"
+  },
+
+
+
+  {
+    "name": "Add an IT Job",
+    "url": "https://sentral.nbscmanlys-h.schools.nsw.edu.au/taskpad/tasks/it/add",
+    "category": "IT Support"
   }
 ]
