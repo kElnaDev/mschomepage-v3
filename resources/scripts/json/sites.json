@@ -236,6 +236,12 @@
     "imageType": "png"
   },
   {
+    "name": "GitHub",
+    "url": "https://github.com/",
+    "category": "Other",
+    "imageType": "png"
+  },
+  {
     "name": "Web Dev",
     "url": "https://development.nbscmanlys-h.schools.nsw.edu.au/",
     "category": "Other",
