@@ -6,7 +6,7 @@ function sanitiseInput(input) {
 }
 function highlightQuery(data, query) {
     var regEscape = function (v) { return v.replace(/[-[\]{}()*+?.,\\^$|#\s]/g, '\\$&'); };
-    return data.replace(new RegExp(regEscape(query), "gi"), function (match) { return "<span class='ss-query'>".concat(match, "</span>"); });
+    return data.replace(new RegExp(regEscape(query), "gi"), function (match) { return "<span class='ss-query'>".concat(match.replace(/\s/g, "<span class='space'></span>"), "</span>"); });
 }
 function phraseToId(category, includeHash) {
     if (includeHash === void 0) { includeHash = true; }

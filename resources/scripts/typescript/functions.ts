@@ -9,7 +9,7 @@ function sanitiseInput(input: string): string {
 function highlightQuery(data: string, query: string): string {
   const regEscape = v => v.replace(/[-[\]{}()*+?.,\\^$|#\s]/g, '\\$&'); // taken from Stack Overflow
   return data.replace(new RegExp(regEscape(query), "gi"),
-    (match) => `<span class='ss-query'>${match}</span>`);
+    (match) => `<span class='ss-query'>${match.replace(/\s/g, "<span class='space'></span>")}</span>`);
 }
 
 

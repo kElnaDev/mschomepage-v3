@@ -117,6 +117,10 @@ SITE SUGGESTIONS WRAPPER
   width: 100%;
   color: #1172b9 !important;
 }
+.ss-site .space {
+  display: inline-block;
+  width: 4.1px;
+}
 
 /********************
    SEARCH THE WEB
