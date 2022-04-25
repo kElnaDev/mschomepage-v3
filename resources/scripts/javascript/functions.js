@@ -31,11 +31,11 @@ function checkEmpty(element) {
 function getImage(site) {
     var image;
     if (site.image) {
-        image = "resources/images/logos/general/".concat(site.image);
+        image = "resources/images/logos/".concat(site.image);
     }
     else if (site.imageType) {
         image =
-            "resources/images/logos/".concat(phraseToId(site.category, false), "/").concat(phraseToId(site.name, false), ".").concat(site.imageType);
+            "resources/images/logos/".concat(phraseToId(site.name, false), ".").concat(site.imageType);
     }
     return image;
 }

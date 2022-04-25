@@ -53,10 +53,13 @@ body {
 }
 
 main {
-  margin-top: 130px;
   padding: 50px;
   width: 100%;
   height: 100%;
+}
+
+#header-spacer {
+  height: 130px;
 }
 
 /********************
@@ -75,6 +78,7 @@ h2 span {
   display: inline-block;
   position: relative;
   font-family: "Google Sans Display", sans-serif;
+  font-size: 24px;
 }
 h2 span::after {
   content: "";
@@ -88,6 +92,7 @@ h2 span::after {
 h3 {
   margin: 15px 0 10px;
   font-family: "Google Sans Display", sans-serif;
+  font-size: 19px;
 }
 
 /********************
@@ -161,7 +166,7 @@ h3 {
   flex-wrap: wrap;
 }
 
-.button, button {
+.button {
   background: #1172b9;
   box-sizing: content-box;
   outline: none;
@@ -183,30 +188,30 @@ h3 {
   -o-transition: 100ms;
   transition: 100ms;
 }
-.button:hover, .button:focus, .button:focus-within, button:hover, button:focus, button:focus-within {
+.button:hover, .button:focus, .button:focus-within {
   margin: 5px;
   padding: 10px;
   filter: brightness(80%);
 }
-.purple .button, .purple button {
+.purple .button {
   background: #6811b9;
 }
-.pink .button, .pink button {
+.pink .button {
   background: #b91192;
 }
-.red .button, .red button {
+.red .button {
   background: #da2110;
 }
-.orange .button, .orange button {
+.orange .button {
   background: #ea5f0a;
 }
-.yellow .button, .yellow button {
+.yellow .button {
   background: #d9bc0a;
 }
-.green .button, .green button {
+.green .button {
   background: #4fb911;
 }
-.button img, button img {
+.button img {
   margin-bottom: 10px;
   width: auto;
   height: 50px;
@@ -216,6 +221,15 @@ button {
   margin: 10px;
   width: 100px;
   height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  -webkit-transition: 100ms;
+  -moz-transition: 100ms;
+  -ms-transition: 100ms;
+  -o-transition: 100ms;
+  transition: 100ms;
 }
 
 /********************
@@ -234,6 +248,48 @@ input:hover {
 }
 input:focus {
   border-bottom-color: white;
+}
+
+/********************
+      DROPDOWN
+********************/
+.dropdown {
+  display: inline-block;
+  position: relative;
+  z-index: 6;
+}
+.dropdown.open {
+  background: #1b2532;
+}
+.dropdown.open .dropdown-items {
+  display: flex;
+}
+.dropdown button {
+  background: none;
+  outline: none;
+  margin: 0;
+  border: none;
+  padding: 5px 10px;
+  width: auto;
+  min-width: 125px;
+  flex-direction: row;
+  font-family: "Google Sans Display", sans-serif;
+  font-size: 19px;
+}
+.dropdown button:hover {
+  background: #202b3b;
+}
+
+.dropdown-items {
+  background: #1b2532;
+  display: none;
+  position: absolute;
+  top: 100%;
+  flex-direction: column;
+  align-items: center;
+}
+.dropdown-items button {
+  width: 100%;
 }
 
 /********************

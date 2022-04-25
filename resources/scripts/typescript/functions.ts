@@ -20,6 +20,7 @@ function phraseToId(category: string, includeHash = true): string {
       .replace(/\s/g, "\-");
 }
 
+
 // taken from Stack Overflow
 function makeId(length = 32): string {
   let result           = '';
@@ -31,22 +32,25 @@ function makeId(length = 32): string {
  return result;
 }
 
+
 function checkEmpty(element: string): boolean {
   return ($(element).html().trim() === '');
 }
+
 
 function getImage(site: website): string {
   // image stuff
   let image: string;
   if (site.image) {
-    image = `resources/images/logos/general/${site.image}`;
+    image = `resources/images/logos/${site.image}`;
   } else if (site.imageType) {
     image =
-      `resources/images/logos/${phraseToId(site.category, false)}/${phraseToId(site.name, false)}.${site.imageType}`;
+      `resources/images/logos/${phraseToId(site.name, false)}.${site.imageType}`;
   }
 
   return image;
 }
+
 
 function timeToString(date: Date): string {
   let hours24 = date.getHours(),
@@ -56,6 +60,7 @@ function timeToString(date: Date): string {
 
     return ((hours24 === 0)? 12: hours12) + ":" + ((minutes < 10)? "0" : "") + minutes + " " + dayHalf;
 }
+
 
 function dateToString(date: Date): string {
   // Number to date
@@ -69,6 +74,7 @@ function dateToString(date: Date): string {
 
   return day + " " + dateNum + " " + month;
 }
+
 
 function getTimeDiff(from: Date, to: Date): time {
   // this section was taken from https://bearnithi.com/ because it was 7 am
@@ -88,6 +94,7 @@ function getTimeDiff(from: Date, to: Date): time {
 
   return {days, hours, minutes, seconds}
 }
+
 
 function includes(data: string | Array<string>, match: string): boolean {
   return data.indexOf(match) !== -1;

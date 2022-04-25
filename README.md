@@ -14,14 +14,13 @@ The third version of the NBSC Manly Selective Campus Homepage was created to fur
   - Button wrappers => `phraseToId(CATEGORY-NAME, false)` + "-wrapper"
   - Unique logos => `phraseToId(SITE-NAME, false)`
   - Image folders => "resources/images/" + `phraseToId(CATEGORY-NAME, false)`
-- Unique logos are stored in the resources/images/CATEGORY-AS-ID folder, named in the same format as category IDs. Check using the `phraseToId()` function. The file types of these images are stored in JSON as `imageType`.
-- Repeated logos are stored in the resources/images/general folder. The file 
-path of these images are stored in the sites.json as `image`.
+- The file types of unique logos are stored in JSON as `imageType`.
+- The names of repeated logos are stored in JSON as `image`.
 - The `addAutoComplete()` function is currently commented out because of CORS issues. We will be implementing a fix soon.
 - The node_module folder in the resources/scripts folder is there for JQuery TypeScript support.
 - The order of the fonts in _globals.scss is an artifact of a previous font order. I couldn't be bothered to refactor it.
 - search.scss is a mess because I didn't initially account for adding logos to the search function.
-- `.current-page` is used to indicate the current page as it was "cooler" and "clearer" than `.disabled`, which is still there should the future lead developer for this website find it more appealing.
+- A survey deemed `.current-page` "cooler" and "clearer" than `.disabled`. `.disabled` remains in case a future developer finds it more appealing.
 
 
 
@@ -47,7 +46,7 @@ This version of the homepage, like the second, is a student project.
 - The search bar concept is inspired by a suggestion from Oscar Pritchard of G24.
 
 ### Special Thanks
-I would like to give special thanks to OggyP, not only for graciously hosting the website for free, but also for supporting me, for helping me troubleshoot issues and for giving valuable feedback.
+I would like to give special thanks to OggyP, not only for graciously hosting the website for free, but also for helping me troubleshoot issues and for giving valuable feedback.
 
 
 

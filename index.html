@@ -37,6 +37,7 @@
     <script src="resources/scripts/javascript/header.js" defer></script>
     <script src="resources/scripts/javascript/load-sites.js" defer></script>
     <script src="resources/scripts/javascript/search.js" defer></script>
+    <script src="resources/scripts/javascript/dropdowns.js" defer></script>
   </head>
 
   <body>
@@ -72,12 +73,13 @@
         <span class="nav-link-name">Development</span>
       </a>
       <a href="https://chess.oggyp.com">
-        <img src="resources/images/logos/general/oggyp-chess.png" alt="">
+        <img src="resources/images/logos/oggyp-chess.png" alt="">
         <span class="nav-link-name">OggyP Chess</span>
       </a>
     </nav>
 
     <main>
+      <div id="header-spacer"></div>
       <!-- IF ADDING A WEBSITE, ADD IT TO resources/scripts/json/sites.json -->
       <section id="search">
         <h2><span>Search</span></h2>
@@ -90,10 +92,28 @@
         </div>
       </section>
 
-      <!-- <section id="dropdown">
+      <!-- <section id="dropdown-test">
         <h2><span>Dropdown Test</span></h2>
 
-        <div id="dropdown-test-wrapper-ist" class="button-wrapper">
+        <div class="dropdown">
+          <button onclick="toggleOpen(this)">
+            Science
+            <span class="material-icons-outlined">arrow_drop_down</span>
+          </button>
+          <div class="dropdown-items">
+            <button onclick="changeDropdown('dropdown-test', this)">CAPA</button>
+            <button onclick="changeDropdown('dropdown-test', this)">English</button>
+            <button onclick="changeDropdown('dropdown-test', this)">HSIE</button>
+            <button onclick="changeDropdown('dropdown-test', this)">LOTE</button>
+            <button onclick="changeDropdown('dropdown-test', this)">Maths</button>
+            <button onclick="changeDropdown('dropdown-test', this)">PDHPE</button>
+            <button onclick="changeDropdown('dropdown-test', this)" style="display:none;">Science</button>
+            <button onclick="changeDropdown('dropdown-test', this)">TAS</button>
+            <button onclick="changeDropdown('dropdown-test', this)">Other</button>
+          </div>
+        </div>
+
+        <div id="dropdown-test-wrapper-tas" class="button-wrapper">
           <a href="#" class="button">Test 1</a>
         </div>
       </section> -->
