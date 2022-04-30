@@ -22,6 +22,7 @@ $.getJSON("resources/scripts/json/sites.json", function (res) {
                 "  <h2><span>".concat(item.category, "</span></h2>") +
                 "</section>");
         }
+<<<<<<< HEAD
         if (item.subcategory && !includes(subcategories, item.subcategory)) {
             subcategories.push(item.subcategory);
             $(phraseToId(item.category)).append('<h3 id="' + phraseToId(item.subcategory, false) + '">' + item.subcategory + '</h3>');
@@ -31,6 +32,12 @@ $.getJSON("resources/scripts/json/sites.json", function (res) {
         }
         else {
             loadSite(wrapper, item);
+=======
+        if (site.subcategory && !includes(subcategories, site.subcategory)) {
+            subcategories.push(site.subcategory);
+            $("".concat(phraseToId(site.category))).append("<h3 id=\"".concat(phraseToId(site.subcategory, false), "\">").concat(site.subcategory, "</h3>") +
+                "<div id=\"".concat(phraseToId(site.subcategory, false), "-wrapper\" class=\"button-wrapper ").concat(catColour, "\"></div>"));
+>>>>>>> 5ac22b7950dd62ea8df099e3a4a858b387ed53d6
         }
     }
     for (var i = 0; i < categories.length; i++) {

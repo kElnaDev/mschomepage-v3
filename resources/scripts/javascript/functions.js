@@ -15,6 +15,25 @@ function phraseToId(category, includeHash) {
             .replace(/[^a-zA-Z0-9\s]/g, "")
             .replace(/\s/g, "\-");
 }
+function scrollParentToChild(parent, child) {
+    var parentRect = parent.getBoundingClientRect();
+    var parentViewableArea = {
+        height: parent.clientHeight,
+        width: parent.clientWidth
+    };
+    var childRect = child.getBoundingClientRect();
+    var isViewable = (childRect.top >= parentRect.top) && (childRect.bottom <= parentRect.top + parentViewableArea.height);
+    if (!isViewable) {
+        var scrollTop = childRect.top - parentRect.top;
+        var scrollBot = childRect.bottom - parentRect.bottom;
+        if (Math.abs(scrollTop) < Math.abs(scrollBot)) {
+            parent.scrollTop += scrollTop;
+        }
+        else {
+            parent.scrollTop += scrollBot;
+        }
+    }
+}
 function makeId(length) {
     if (length === void 0) { length = 32; }
     var result = '';

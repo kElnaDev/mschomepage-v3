@@ -5,6 +5,8 @@ const ssWrapper = $('#search-suggestions-wrapper');
 let matchFound: boolean;
 let firstResult: boolean;
 let selected: string;
+let listIndex = 0
+let highlightedItem = 0
 
 // searchBar.trigger('focus');
 
@@ -25,6 +27,8 @@ searchBar.on('input', () => {
     ssWrapper.removeClass("empty");
   }
 
+  listIndex = 0 // Used as a counter for how many sites and categories there are
+  highlightedItem = 0
 
   firstResult = true;
   for (let i = 0; i < categories.length; i++) // used for-loop instead of forEach() for speed
@@ -49,6 +53,12 @@ searchBar.on('input', () => {
   }
 
   addWebSearch(ogQuery);
+
+  if (listIndex) { // If there are search results
+    selectSearchItem(0)
+  } else {
+    highlightedItem = null
+  }
 });
 
 
@@ -60,14 +70,33 @@ function addCategory(id: string, category: string, query: string, subcategory = 
 
   // add to html
   searchSuggestions.append(
-    `<li class="ss-category" id=${id}>` +
+    `<li class="ss-category" id=${id} onmouseover="selectSearchItem(${listIndex})">` +
     `  <a href="${phraseToId(category)}">` +
     `    ${(subcategory)? "Subc" : "C"}ategory: <span class="ss-category-name">${catName}</span>` +
     `  </a>` +
     `</li>`
   );
+
+  listIndex++
 }
 
+// handle when a search item is hovered over
+function selectSearchItem(index: number, keyboard: boolean = false) {
+    if (!keyboard && keyWasPressed) return // Prevent onhover being affected when scrolling when navigating with the arrow keys
+    highlightedItem = index
+    $("#search-suggestions > li").removeAttr("style")
+    const suggestion = $("#search-suggestions > li:nth-child(" + (index + 1) + ")")
+    suggestion.css("background", "rgba(106, 120, 129, 0.15)")
+    if (keyboard) {
+        keyPressed()
+        scrollParentToChild($("#search-suggestions")[0], suggestion[0])
+    }
+}
+
+function clickSearchItem() {
+    const suggestion = $("#search-suggestions > li:nth-child(" + (highlightedItem + 1) + ") > a")
+    suggestion[0].click()
+}
 
 function addSite(site: website, query: string): void {
   matchFound = true;
@@ -97,7 +126,7 @@ function addSite(site: website, query: string): void {
 
   // add to html
   searchSuggestions.append(
-    `<li class="ss-site">` +
+    `<li class="ss-site" onmouseover="selectSearchItem(${listIndex})">` +
     `  <a href="${site.url}">` +
     `    <img src="${image}">` +
     `    <span class="ss-site-info-wrapper">` +
@@ -110,6 +139,8 @@ function addSite(site: website, query: string): void {
     `  </a>` +
     `</li>`
   );
+
+  listIndex++
 }
 
 

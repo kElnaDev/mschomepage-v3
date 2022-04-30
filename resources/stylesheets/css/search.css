@@ -53,17 +53,16 @@ SITE SUGGESTIONS WRAPPER
 }
 #search-suggestions li {
   border-top: 1px solid #aeb7bc;
-  padding: 10px 5px;
   list-style: none;
-}
-#search-suggestions li:hover {
-  background: rgba(106, 120, 129, 0.15);
 }
 #search-suggestions .ss-query {
   background: #4ec3de;
 }
 
 .ss-category a {
+  padding: 10px 5px;
+  width: 100%;
+  display: inline-block;
   color: #6a7881 !important;
 }
 
@@ -74,6 +73,7 @@ SITE SUGGESTIONS WRAPPER
   display: inline-block;
 }
 .ss-site a {
+  padding: 10px 5px;
   width: 100%;
   display: flex;
   flex-direction: row;
@@ -167,11 +167,14 @@ SITE SUGGESTIONS WRAPPER
 /********************
        MOBILE
 ********************/
-@media only screen and (max-width: 1000px) {
+@media only screen and (max-width: 900px) {
   #search-suggestions {
     width: calc(100vw - 60px);
   }
 
+  .ss-site-info-wrapper {
+    align-items: initial;
+  }
   .ss-site-meta-wrapper {
     flex-direction: column;
     align-items: initial;
