@@ -49,7 +49,7 @@ header.collapsed img {
 /********************
        MOBILE
 ********************/
-@media only screen and (max-width: 900px) {
+@media only screen and (max-width: 450px) {
   header {
     width: 100vw;
   }

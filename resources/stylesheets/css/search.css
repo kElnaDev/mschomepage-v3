@@ -167,7 +167,7 @@ SITE SUGGESTIONS WRAPPER
 /********************
        MOBILE
 ********************/
-@media only screen and (max-width: 900px) {
+@media only screen and (max-width: 450px) {
   #search-suggestions {
     width: calc(100vw - 60px);
   }

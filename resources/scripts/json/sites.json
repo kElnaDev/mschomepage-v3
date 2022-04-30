@@ -1,52 +1,5 @@
 [
   {
-    "name": "Drive",
-    "url": "https://drive.google.com/drive/my-drive",
-    "category": "Dropdown Tests",
-    "imageType": "svg"
-  },
-  {
-    "name": "Sheets",
-    "url": "https://docs.google.com/speadsheets/u/0/?tgif=c",
-    "category": "Dropdown Tests",
-    "imageType": "svg"
-  },
-  {
-    "dropdown": true,
-    "name": "dropTest",
-    "category": "Dropdown Tests",
-    "subcategory": "Hello, world!",
-    "sites": [
-      {
-        "name": "Classroom",
-        "url": "https://classroom.google.com/h",
-        "menu": "Menu 1",
-        "imageType": "png"
-      },
-      {
-        "name": "Gmail",
-        "url": "https://mail.google.com/mail/u/0/#inbox",
-        "menu": "Menu 1",
-        "imageType": "png"
-      },
-      {
-        "name": "Docs",
-        "url": "https://docs.google.com/document/u/0/?tgif=c",
-        "menu": "Menu 2",
-        "imageType": "png"
-      },
-      {
-        "name": "Slides",
-        "url": "https://docs.google.com/presentation/u/0/?tgif=c",
-        "menu": "Menu 2",
-        "imageType": "png"
-      }
-    ]
-  },
-
-
-
-  {
     "name": "Classroom",
     "url": "https://classroom.google.com/h",
     "category": "G Suite",

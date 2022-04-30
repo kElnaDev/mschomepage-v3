@@ -27,7 +27,10 @@ searchBar.on('input', function () {
             addCategory(makeId(), categories[i], ogQuery);
     for (var i = 0; i < subcategories.length; i++)
         if (includes(subcategories[i].toLowerCase(), query))
-            addCategory(makeId(), subcategories[i], ogQuery, true);
+            addCategory(makeId(), subcategories[i], ogQuery, 'Subcategory');
+    for (var i = 0; i < menus.length; i++)
+        if (includes(menus[i].toLowerCase(), query))
+            addCategory(makeId(), menus[i], ogQuery, 'Menu');
     for (var i = 0; i < sites.length; i++) {
         var site = sites[i];
         if (includes(site.name.toLowerCase(), query))
@@ -47,13 +50,13 @@ searchBar.on('input', function () {
         highlightedItem = null;
     }
 });
-function addCategory(id, category, query, subcategory) {
-    if (subcategory === void 0) { subcategory = false; }
+function addCategory(id, category, query, type) {
+    if (type === void 0) { type = 'Category'; }
     matchFound = true;
     var catName = highlightQuery(category, query);
     searchSuggestions.append("<li class=\"ss-category\" id=".concat(id, " onmouseover=\"selectSearchItem(").concat(listIndex, ")\">") +
         "  <a href=\"".concat(phraseToId(category), "\">") +
-        "    ".concat((subcategory) ? "Subc" : "C", "ategory: <span class=\"ss-category-name\">").concat(catName, "</span>") +
+        "    ".concat(type, ": <span class=\"ss-category-name\">").concat(catName, "</span>") +
         "  </a>" +
         "</li>");
     listIndex++;
