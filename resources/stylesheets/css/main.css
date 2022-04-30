@@ -254,15 +254,17 @@ input:focus {
       DROPDOWN
 ********************/
 .dropdown {
-  display: inline-block;
   position: relative;
   z-index: 6;
 }
-.dropdown.open {
-  background: #1b2532;
-}
 .dropdown.open .dropdown-items {
   display: flex;
+}
+.dropdown.open button {
+  background: #1b2532;
+}
+.dropdown.open > button span {
+  transform: rotate(180deg);
 }
 .dropdown button {
   background: none;
@@ -275,16 +277,26 @@ input:focus {
   flex-direction: row;
   font-family: "Google Sans Display", sans-serif;
   font-size: 19px;
+  transition: none;
 }
-.dropdown button:hover {
+.dropdown button:hover, .dropdown button:focus {
+  background: #1e2837;
+}
+.dropdown > button:hover, .dropdown > button:focus {
   background: #202b3b;
+}
+.dropdown > button span {
+  display: inline-block;
+  font-size: 30px;
+  transition: 250ms;
+  transform: rotate(360deg);
 }
 
 .dropdown-items {
-  background: #1b2532;
   display: none;
   position: absolute;
-  top: 100%;
+  top: 50px;
+  z-index: 7;
   flex-direction: column;
   align-items: center;
 }

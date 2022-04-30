@@ -1,0 +1,170 @@
+[
+  {
+    "name": "Drive",
+    "url": "https://drive.google.com/drive/my-drive",
+    "category": "Dropdown Tests",
+    "imageType": "svg"
+  },
+  {
+    "name": "Sheets",
+    "url": "https://docs.google.com/speadsheets/u/0/?tgif=c",
+    "category": "Dropdown Tests",
+    "imageType": "svg"
+  },
+  {
+    "dropdown": true,
+    "name": "dropTest",
+    "category": "Dropdown Tests",
+    "subcategory": "Hello, world!",
+    "sites": [
+      {
+        "name": "Classroom",
+        "url": "https://classroom.google.com/h",
+        "menu": "Menu 1",
+        "imageType": "png"
+      },
+      {
+        "name": "Gmail",
+        "url": "https://mail.google.com/mail/u/0/#inbox",
+        "menu": "Menu 1",
+        "imageType": "png"
+      },
+      {
+        "name": "Docs",
+        "url": "https://docs.google.com/document/u/0/?tgif=c",
+        "menu": "Menu 2",
+        "imageType": "png"
+      },
+      {
+        "name": "Slides",
+        "url": "https://docs.google.com/presentation/u/0/?tgif=c",
+        "menu": "Menu 2",
+        "imageType": "png"
+      }
+    ]
+  },
+
+
+
+  {
+    "name": "Classroom",
+    "url": "https://classroom.google.com/h",
+    "category": "G Suite",
+    "imageType": "png"
+  },
+  {
+    "name": "Gmail",
+    "url": "https://mail.google.com/mail/u/0/#inbox",
+    "category": "G Suite",
+    "imageType": "png"
+  },
+  {
+    "name": "Docs",
+    "url": "https://docs.google.com/document/u/0/?tgif=c",
+    "category": "G Suite",
+    "imageType": "png"
+  },
+  {
+    "name": "Slides",
+    "url": "https://docs.google.com/presentation/u/0/?tgif=c",
+    "category": "G Suite",
+    "imageType": "png"
+  },
+  {
+    "name": "Sheets",
+    "url": "https://docs.google.com/speadsheets/u/0/?tgif=c",
+    "category": "G Suite",
+    "imageType": "svg"
+  },
+  {
+    "name": "Drive",
+    "url": "https://drive.google.com/drive/my-drive",
+    "category": "G Suite",
+    "imageType": "svg"
+  },
+
+
+
+  {
+    "name": "Official Website",
+    "url": "https://nbscmanlys-h.schools.nsw.gov.au/",
+    "category": "Manly Websites",
+    "image": "manly-campus.png"
+  },
+  {
+    "name": "DoE Portal",
+    "url": "https://portal.det.nsw.edu.au/",
+    "category": "Manly Websites",
+    "image": "nsw.png"
+  },
+  {
+    "name": "Sentral",
+    "url": "https://sentral.nbscmanlys-h.schools.nsw.edu.au/",
+    "category": "Manly Websites",
+    "imageType": "png"
+  },
+  {
+    "name": "eDiary",
+    "url": "https://nbscmanly.myediary.com.au/",
+    "category": "Manly Websites",
+    "imageType": "png"
+  },
+  {
+    "name": "Timetables",
+    "url": "https://timetable.nbscmanlys-h.schools.nsw.edu.au/",
+    "category": "Manly Websites",
+    "imageType": "png"
+  },
+  {
+    "name": "Edmodo",
+    "url": "https://msc.edmodo.com/",
+    "category": "Manly Websites",
+    "imageType": "png"
+  },
+  {
+    "name": "Moodle",
+    "url": "https://moodle.nbscmanlys-h.schools.nsw.edu.au/",
+    "category": "Manly Websites",
+    "imageType": "png"
+  },
+  {
+    "name": "Sign Book",
+    "url": "https://projects.nbscmanlys-h.schools.nsw.edu.au/signin",
+    "category": "Manly Websites",
+    "imageType": "png"
+  },
+  {
+    "name": "Weekly Pines",
+    "url": "https://nbscmanlys-h.schools.nsw.gov.au/newsletter.html",
+    "category": "Manly Websites",
+    "imageType": "png"
+  },
+  {
+    "name": "Awards (beta)",
+    "url": "https://awards.nbscmanlys-h.schools.nsw.edu.au/",
+    "category": "Manly Websites",
+    "imageType": "png"
+  },
+
+  {
+    "name": "eLibrary",
+    "url": "https://manlycampus.wheelers.co/",
+    "category": "Manly Websites",
+    "subcategory": "Library",
+    "imageType": "png"
+  },
+  {
+    "name": "Library",
+    "url": "https://oliver333.library.det.nsw.edu.au/oliver/libraryHome.do?sso=false&corporation=8567",
+    "category": "Manly Websites",
+    "subcategory": "Library",
+    "imageType": "png"
+  },
+  {
+    "name": "Britannica",
+    "url": "https://school.eb.com.au/",
+    "category": "Manly Websites",
+    "subcategory": "Library",
+    "imageType": "png"
+  }
+]
