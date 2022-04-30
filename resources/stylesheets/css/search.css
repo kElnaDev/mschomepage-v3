@@ -56,9 +56,6 @@ SITE SUGGESTIONS WRAPPER
   padding: 10px 5px;
   list-style: none;
 }
-#search-suggestions li:hover {
-  background: rgba(106, 120, 129, 0.15);
-}
 #search-suggestions .ss-query {
   background: #4ec3de;
 }

@@ -7,7 +7,7 @@ function sanitiseInput(input: string): string {
 
 
 function highlightQuery(data: string, query: string): string {
-  const regEscape = v => v.replace(/[-[\]{}()*+?.,\\^$|#\s]/g, '\\$&'); // taken from Stack Overflow
+  const regEscape = (v: string) => v.replace(/[-[\]{}()*+?.,\\^$|#\s]/g, '\\$&'); // taken from Stack Overflow
   return data.replace(new RegExp(regEscape(query), "gi"),
     (match) => `<span class='ss-query'>${match.replace(/\s/g, "<span class='space'></span>")}</span>`);
 }
@@ -18,6 +18,35 @@ function phraseToId(category: string, includeHash = true): string {
     category.toLowerCase()
       .replace(/[^a-zA-Z0-9\s]/g, "")
       .replace(/\s/g, "\-");
+}
+
+// Thank you Jordan Maduro and Beachhouse
+// https://stackoverflow.com/questions/45408920/plain-javascript-scrollintoview-inside-div
+function scrollParentToChild(parent: HTMLElement, child: HTMLElement) {
+  // Where is the parent on page
+  var parentRect = parent.getBoundingClientRect();
+  // What can you see?
+  var parentViewableArea = {
+    height: parent.clientHeight,
+    width: parent.clientWidth
+  };
+  // Where is the child
+  var childRect = child.getBoundingClientRect();
+  // Is the child viewable?
+  var isViewable = (childRect.top >= parentRect.top) && (childRect.bottom <= parentRect.top + parentViewableArea.height);
+  // if you can't see the child try to scroll parent
+  if (!isViewable) {
+    // Should we scroll using top or bottom? Find the smaller ABS adjustment
+    const scrollTop = childRect.top - parentRect.top;
+    const scrollBot = childRect.bottom - parentRect.bottom;
+    if (Math.abs(scrollTop) < Math.abs(scrollBot)) {
+      // we're near the top of the list
+      parent.scrollTop += scrollTop;
+    } else {
+      // we're near the bottom of the list
+      parent.scrollTop += scrollBot;
+    }
+  }
 }
 
 

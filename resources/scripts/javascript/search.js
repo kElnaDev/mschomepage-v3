@@ -4,6 +4,8 @@ var ssWrapper = $('#search-suggestions-wrapper');
 var matchFound;
 var firstResult;
 var selected;
+var listIndex = 0;
+var highlightedItem = 0;
 searchBar.on('input', function () {
     var ogQuery = searchBar.val().toString();
     var query = ogQuery.toLowerCase();
@@ -17,6 +19,8 @@ searchBar.on('input', function () {
     else {
         ssWrapper.removeClass("empty");
     }
+    listIndex = 0;
+    highlightedItem = 0;
     firstResult = true;
     for (var i = 0; i < categories.length; i++)
         if (includes(categories[i].toLowerCase(), query))
@@ -36,16 +40,40 @@ searchBar.on('input', function () {
             addSite(site, ogQuery);
     }
     addWebSearch(ogQuery);
+    if (listIndex) {
+        selectSearchItem(0);
+    }
+    else {
+        highlightedItem = null;
+    }
 });
 function addCategory(id, category, query, subcategory) {
     if (subcategory === void 0) { subcategory = false; }
     matchFound = true;
     var catName = highlightQuery(category, query);
-    searchSuggestions.append("<li class=\"ss-category\" id=".concat(id, ">") +
+    searchSuggestions.append("<li class=\"ss-category\" id=".concat(id, " onmouseover=\"selectSearchItem(").concat(listIndex, ")\">") +
         "  <a href=\"".concat(phraseToId(category), "\">") +
         "    ".concat((subcategory) ? "Subc" : "C", "ategory: <span class=\"ss-category-name\">").concat(catName, "</span>") +
         "  </a>" +
         "</li>");
+    listIndex++;
+}
+function selectSearchItem(index, keyboard) {
+    if (keyboard === void 0) { keyboard = false; }
+    if (!keyboard && keyWasPressed)
+        return;
+    highlightedItem = index;
+    $("#search-suggestions > li").removeAttr("style");
+    var suggestion = $("#search-suggestions > li:nth-child(" + (index + 1) + ")");
+    suggestion.css("background", "#d3d3d3");
+    if (keyboard) {
+        keyPressed();
+        scrollParentToChild($("#search-suggestions")[0], suggestion[0]);
+    }
+}
+function clickSearchItem() {
+    var suggestion = $("#search-suggestions > li:nth-child(" + (highlightedItem + 1) + ") > a");
+    suggestion[0].click();
 }
 function addSite(site, query) {
     matchFound = true;
@@ -61,7 +89,7 @@ function addSite(site, query) {
     if (site.subcategory)
         category = "<span class=\"ss-site-subcategory\">".concat(subcategory, "</span> &gt; ").concat(category);
     var image = getImage(site);
-    searchSuggestions.append("<li class=\"ss-site\">" +
+    searchSuggestions.append("<li class=\"ss-site\" onmouseover=\"selectSearchItem(".concat(listIndex, ")\">") +
         "  <a href=\"".concat(site.url, "\">") +
         "    <img src=\"".concat(image, "\">") +
         "    <span class=\"ss-site-info-wrapper\">" +
@@ -73,6 +101,7 @@ function addSite(site, query) {
         "    </span>" +
         "  </a>" +
         "</li>");
+    listIndex++;
 }
 function addWebSearch(query) {
     var searchBox = $('#search-wrapper');
