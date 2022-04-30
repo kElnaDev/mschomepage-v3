@@ -47,7 +47,7 @@ $.getJSON("resources/scripts/json/sites.json", (res): void => {
     if (site.subcategory && !includes(subcategories, site.subcategory)) {
       subcategories.push(site.subcategory);
       $(`${phraseToId(site.category)}`).append(
-        `<h3>${site.subcategory}</h3>` +
+        `<h3 id="${phraseToId(site.subcategory, false)}">${site.subcategory}</h3>` +
         `<div id="${phraseToId(site.subcategory, false)}-wrapper" class="button-wrapper ${catColour}"></div>`
       );
     }

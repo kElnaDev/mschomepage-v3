@@ -26,7 +26,7 @@ $.getJSON("resources/scripts/json/sites.json", function (res) {
         }
         if (site.subcategory && !includes(subcategories, site.subcategory)) {
             subcategories.push(site.subcategory);
-            $("".concat(phraseToId(site.category))).append("<h3>".concat(site.subcategory, "</h3>") +
+            $("".concat(phraseToId(site.category))).append("<h3 id=\"".concat(phraseToId(site.subcategory, false), "\">").concat(site.subcategory, "</h3>") +
                 "<div id=\"".concat(phraseToId(site.subcategory, false), "-wrapper\" class=\"button-wrapper ").concat(catColour, "\"></div>"));
         }
         var image = getImage(site);

@@ -65,7 +65,7 @@ function selectSearchItem(index, keyboard) {
     highlightedItem = index;
     $("#search-suggestions > li").removeAttr("style");
     var suggestion = $("#search-suggestions > li:nth-child(" + (index + 1) + ")");
-    suggestion.css("background", "#d3d3d3");
+    suggestion.css("background", "rgba(106, 120, 129, 0.15)");
     if (keyboard) {
         keyPressed();
         scrollParentToChild($("#search-suggestions")[0], suggestion[0]);

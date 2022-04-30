@@ -53,7 +53,6 @@ SITE SUGGESTIONS WRAPPER
 }
 #search-suggestions li {
   border-top: 1px solid #aeb7bc;
-  padding: 10px 5px;
   list-style: none;
 }
 #search-suggestions .ss-query {
@@ -61,6 +60,9 @@ SITE SUGGESTIONS WRAPPER
 }
 
 .ss-category a {
+  padding: 10px 5px;
+  width: 100%;
+  display: inline-block;
   color: #6a7881 !important;
 }
 
@@ -71,6 +73,7 @@ SITE SUGGESTIONS WRAPPER
   display: inline-block;
 }
 .ss-site a {
+  padding: 10px 5px;
   width: 100%;
   display: flex;
   flex-direction: row;
