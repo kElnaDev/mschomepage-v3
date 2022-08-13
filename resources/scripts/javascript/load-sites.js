@@ -48,7 +48,7 @@ function loadSite(wrapper, site) {
         $(phraseToId(site.category)).append("<div id=\"".concat(phraseToId(site.subcategory, false), "-wrapper\" class=\"button-wrapper ").concat(catColour, "\"></div>"));
     }
     var image = getImage(site);
-    $(wrapper).append("<a href=\"".concat(site.url, "\" class=\"button\">") +
+    $(wrapper).append("<a href=\"".concat(site.url, "\" class=\"button\" target=\"_blank\">") +
         ((image) ? "<img src=\"".concat(image, "\" alt=\"\">") : '') +
         site.name +
         "</a>");

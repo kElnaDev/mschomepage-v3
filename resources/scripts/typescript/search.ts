@@ -130,7 +130,7 @@ function addSite(site: website, query: string): void {
   // add to html
   searchSuggestions.append(
     `<li class="ss-site" onmouseover="selectSearchItem(${listIndex})">` +
-    `  <a href="${site.url}">` +
+    `  <a href="${site.url}" target="_blank">` +
     `    <img src="${image}">` +
     `    <span class="ss-site-info-wrapper">` +
     `      <span class="ss-site-meta-wrapper">` +
@@ -154,11 +154,11 @@ function addWebSearch(query) {
 
   searchBox.append(
     `<div id="search-web">` +
-    `  <a href="https://www.google.com/search?q=${sanitiseInput(query)}" id="search-web-google">` +
+    `  <a href="https://www.google.com/search?q=${sanitiseInput(query)}" id="search-web-google" target="_blank">` +
     `    <img src="resources/images/logos/google.svg" alt="">` +
     `    <span>Search Google for "${query.replace(/</g, "&lt;").replace(/>/g, "&gt;")}"</span>` +
     `  </a>` +
-    `  <a href="https://duckduckgo.com/?q=${sanitiseInput(query)}" id="search-web-duck">` +
+    `  <a href="https://duckduckgo.com/?q=${sanitiseInput(query)}" id="search-web-duck" target="_blank">` +
     `    <img src="resources/images/logos/duckduckgo.png" alt="">` +
     `    <span>Search DuckDuckGo for "${query.replace(/</g, "&lt;").replace(/>/g, "&gt;")}"</span>` +
     `  </a>` +

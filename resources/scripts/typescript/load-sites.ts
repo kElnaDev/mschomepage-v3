@@ -91,7 +91,7 @@ function loadSite(wrapper: string, site: website) {
 
 
   $(wrapper).append(
-    `<a href="${site.url}" class="button">` +
+    `<a href="${site.url}" class="button" target="_blank">` +
       ((image)? `<img src="${image}" alt="">` : '') +
       site.name +
     `</a>`

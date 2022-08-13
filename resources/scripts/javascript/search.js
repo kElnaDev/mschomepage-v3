@@ -93,7 +93,7 @@ function addSite(site, query) {
         category = "<span class=\"ss-site-subcategory\">".concat(subcategory, "</span> &gt; ").concat(category);
     var image = getImage(site);
     searchSuggestions.append("<li class=\"ss-site\" onmouseover=\"selectSearchItem(".concat(listIndex, ")\">") +
-        "  <a href=\"".concat(site.url, "\">") +
+        "  <a href=\"".concat(site.url, "\" target=\"_blank\">") +
         "    <img src=\"".concat(image, "\">") +
         "    <span class=\"ss-site-info-wrapper\">" +
         "      <span class=\"ss-site-meta-wrapper\">" +
@@ -110,11 +110,11 @@ function addWebSearch(query) {
     var searchBox = $('#search-wrapper');
     $('#search-web').remove();
     searchBox.append("<div id=\"search-web\">" +
-        "  <a href=\"https://www.google.com/search?q=".concat(sanitiseInput(query), "\" id=\"search-web-google\">") +
+        "  <a href=\"https://www.google.com/search?q=".concat(sanitiseInput(query), "\" id=\"search-web-google\" target=\"_blank\">") +
         "    <img src=\"resources/images/logos/google.svg\" alt=\"\">" +
         "    <span>Search Google for \"".concat(query.replace(/</g, "&lt;").replace(/>/g, "&gt;"), "\"</span>") +
         "  </a>" +
-        "  <a href=\"https://duckduckgo.com/?q=".concat(sanitiseInput(query), "\" id=\"search-web-duck\">") +
+        "  <a href=\"https://duckduckgo.com/?q=".concat(sanitiseInput(query), "\" id=\"search-web-duck\" target=\"_blank\">") +
         "    <img src=\"resources/images/logos/duckduckgo.png\" alt=\"\">" +
         "    <span>Search DuckDuckGo for \"".concat(query.replace(/</g, "&lt;").replace(/>/g, "&gt;"), "\"</span>") +
         "  </a>" +

@@ -25,7 +25,7 @@
   },
   {
     "name": "Sheets",
-    "url": "https://docs.google.com/speadsheets/u/0/?tgif=c",
+    "url": "https://docs.google.com/spreadsheets/u/0/?tgif=c",
     "category": "G Suite",
     "imageType": "svg"
   },
@@ -325,5 +325,14 @@
     "category": "Other",
     "subcategory": "Wifi",
     "imageType": "svg"
+  },
+
+
+
+  {
+    "name": "Jesus",
+    "url": "https://jesus.com",
+    "category": "Scripture",
+    "imageType": "jpg"
   }
 ]
